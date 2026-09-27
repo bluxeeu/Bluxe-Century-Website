@@ -1,0 +1,106 @@
+{
+  "estate-property-guide-v2-morocco": {
+    "3": {
+      "title": "Lanre Olagoke · One to Watch",
+      "youtube": "https://www.youtube.com/watch?v=65hnd6sNq9Y",
+      "relationship": "related editorial cross-reference",
+      "other_reader": "../estate-magazine-v3/#page=39"
+    }
+  },
+  "estate-magazine-v3": {
+    "10": {
+      "title": "Lamborghini Urus",
+      "youtube": "https://www.youtube.com/watch?v=oRRpkh3hsBo",
+      "relationship": "link annotation in original PDF",
+      "other_reader": ""
+    },
+    "21": {
+      "title": "Soneva Fushi",
+      "youtube": "https://www.youtube.com/watch?v=tzlqP_oapTo",
+      "relationship": "link annotation in original PDF",
+      "other_reader": ""
+    },
+    "32": {
+      "title": "Bradley Theodore",
+      "youtube": "https://www.youtube.com/watch?v=hHnSyEpS5DM",
+      "relationship": "link annotation in original PDF",
+      "other_reader": ""
+    },
+    "39": {
+      "title": "EPG Art launch · US Embassy London",
+      "youtube": "https://www.youtube.com/watch?v=65hnd6sNq9Y",
+      "relationship": "link annotation in original PDF",
+      "other_reader": "../estate-property-guide-v2-morocco/#page=3"
+    },
+    "55": {
+      "title": "An Evening with Lauren von der Pool",
+      "youtube": "https://www.youtube.com/watch?v=-ULKaqR9_XE",
+      "relationship": "link annotation in original PDF",
+      "other_reader": ""
+    },
+    "78": {
+      "title": "Cape Verde",
+      "youtube": "https://www.youtube.com/watch?v=Hzr5itPiAkc",
+      "relationship": "link annotation in original PDF",
+      "other_reader": ""
+    }
+  },
+  "bluxe-century-annual-2023": {
+    "29": {
+      "title": "The Deal Room",
+      "youtube": "https://www.youtube.com/watch?v=U-0TgvoVYbs",
+      "relationship": "link annotation in original PDF",
+      "other_reader": ""
+    },
+    "52": {
+      "title": "Ferrari fashion",
+      "youtube": "https://www.youtube.com/watch?v=UenYZOq7RvY",
+      "relationship": "link annotation in original PDF",
+      "other_reader": ""
+    },
+    "56": {
+      "title": "Jesu Segun",
+      "youtube": "https://www.youtube.com/watch?v=W7s1OTy3il8",
+      "relationship": "link annotation in original PDF",
+      "other_reader": ""
+    },
+    "78": {
+      "title": "Bombardier Global 8000",
+      "youtube": "https://www.youtube.com/watch?v=7yY2WxNoHLU",
+      "relationship": "link annotation in original PDF",
+      "other_reader": ""
+    },
+    "98": {
+      "title": "AlUla",
+      "youtube": "https://www.youtube.com/watch?v=XrM5Y5ghEHQ",
+      "relationship": "link annotation in original PDF",
+      "other_reader": ""
+    }
+  },
+  "2024": {
+    "55": {
+      "title": "The Deal Room",
+      "youtube": "https://www.youtube.com/watch?v=U-0TgvoVYbs",
+      "relationship": "link annotation in original PDF",
+      "other_reader": ""
+    },
+    "104": {
+      "title": "Ferrari fashion",
+      "youtube": "https://www.youtube.com/watch?v=UenYZOq7RvY",
+      "relationship": "link annotation in original PDF",
+      "other_reader": ""
+    },
+    "114": {
+      "title": "Jesu Segun",
+      "youtube": "https://www.youtube.com/watch?v=W7s1OTy3il8",
+      "relationship": "link annotation in original PDF",
+      "other_reader": ""
+    },
+    "160": {
+      "title": "Vila Vita",
+      "youtube": "https://www.youtube.com/watch?v=SmSJk2DZp54",
+      "relationship": "link annotation in original PDF",
+      "other_reader": ""
+    }
+  }
+}

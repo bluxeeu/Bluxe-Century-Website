@@ -437,6 +437,7 @@ footer{padding-block:64px 40px;background:radial-gradient(90% 80% at 100% 0%,rgb
 .legal{margin-top:48px;padding-top:22px;border-top:1px solid rgba(227,191,131,.2);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font:700 8.5px/1.8 var(--tech);letter-spacing:.18em;text-transform:uppercase;color:var(--bone-dim)}
 
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media(max-width:760px){#filmStory{grid-template-columns:1fr!important}}
 </style>
 <link rel="stylesheet" href="/refinement.css">
 
@@ -879,6 +880,13 @@ footer{padding-block:64px 40px;background:radial-gradient(90% 80% at 100% 0%,rgb
     </div>
   </section>
 
+  <section class="pad" style="background:#0b0b0b;color:#eee9e0">
+    <div class="wrap" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,4vw,60px);align-items:center" id="filmStory">
+      <div><p class="eyebrow">Films in context · Estate archive</p><h2 style="font:400 clamp(34px,5vw,64px)/1.05 Georgia,serif;margin:10px 0 18px">The story continues <em>on film.</em></h2><p style="line-height:1.7;color:#bcb4a9">The EPG Art launch at the US Embassy London appears in The Estate’s third digital edition, where the original page links to this film. Volume Two’s Lanre Olagoke profile offers a related entry into the same art programme.</p><div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:24px"><a class="link" href="reader/estate-magazine-v3/#page=39">Read the EPG Art event ↗</a><a class="link" href="reader/estate-property-guide-v2-morocco/#page=3">Read Lanre Olagoke ↗</a></div></div>
+      <div><iframe title="EPG Art launch film" src="https://www.youtube-nocookie.com/embed/65hnd6sNq9Y" loading="lazy" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display:block;width:100%;aspect-ratio:16/9;border:0;background:#171717"></iframe><p style="font-size:12px;color:#a8a095;line-height:1.6">EPG Art launch · Film linked from the original digital edition, page 39.</p></div>
+    </div>
+  </section>
+
   <section class="pad">
     <div class="wrap">
       <label class="eyebrow" for="archSearch" style="display:block">Search the archive</label>
@@ -1273,13 +1281,14 @@ footer{padding-block:64px 40px;background:radial-gradient(90% 80% at 100% 0%,rgb
     {f:'Article',t:'A Seismic Shift Across Africa',d:'Date not shown',k:'Africa',p:'Some revolutions don’t need guns. They need courage.',u:B+'a-seismic-shift-across-africa'},
     {f:'Article',t:'The Royal Attraction',d:'Date not shown',k:'Property',p:'Why the British royals are moving to the Algarve.',u:B+'the-royal-attraction'},
     {f:'Article',t:'Set Sail and Dive In',d:'2024',k:'Edition launch',p:'An introduction to the Fall 2024 edition of Bluxe Century.',u:B+'set-sail-and-dive-in'},
+    {f:'Film',t:'EPG Art launch · US Embassy London',d:'Estate third edition',k:'EPG Art',p:'Linked from the original digital edition, page 39; related to the Lanre Olagoke profile in Volume Two.',u:'https://www.youtube.com/watch?v=65hnd6sNq9Y',img:'pages/estate-magazine-v3/page-039.webp',go:'Watch on YouTube',play:true},
     {f:'Film',t:'The Quiet Truth about Luxury Watches',d:'2026',k:'MagCast',p:'The film companion to The Power Behind Resale.',u:'https://youtu.be/l60bGgnQ_LU',img:'img/c-rings.webp',go:'Watch on YouTube',play:true},
     {f:'Film',t:'The Illusion of Choice',d:'2026',k:'MagCast',p:'The film companion to Designed Feeds, Borrowed Beliefs.',u:'https://youtu.be/zq4kLeqTmxM',img:'img/c-abaya.webp',go:'Watch on YouTube',play:true},
     {f:'Film',t:'How to Use the MagCast',d:'2026',k:'MagCast',p:'New to the MagCast? Start here.',u:'https://youtu.be/xbtYqRq7OP4',img:'img/c-reader.webp',go:'Watch on YouTube',play:true},
     {f:'Film',t:'The MagCast on Spotify',d:'2026',k:'Audio',p:'Curated audio commentary for those who value insight but not the time to read.',u:'https://open.spotify.com/episode/2tzrNh5p2apXcqeFPbJNkF',img:'img/butterfly.webp',go:'Listen on Spotify',play:true},
     {f:'Film',t:'Global Network Community',d:'Date not shown',k:'Bluxe film',p:'The people and places of the Bluxe network.',u:'https://www.youtube.com/watch?v=rK0-oVuyudU',img:'img/event-2.webp',go:'Watch on YouTube',play:true},
     {f:'Film',t:'Curated Events',d:'Date not shown',k:'Bluxe film',p:'Inside Bluxe gatherings.',u:'https://www.youtube.com/watch?v=jsZBxbJhDHU',img:'img/event-1.webp',go:'Watch on YouTube',play:true},
-    {f:'Film',t:'Strategic Benefits',d:'Date not shown',k:'Bluxe film',p:'What the Bluxe network offers its members and partners.',u:'https://www.youtube.com/watch?v=-ULKaqR9_XE',img:'img/event-4.webp',go:'Watch on YouTube',play:true}
+    {f:'Film',t:'An Evening with Lauren von der Pool',d:'Estate digital edition',k:'Event film',p:'The Estate third edition, page 55, links directly to this EPG Media event film.',u:'https://www.youtube.com/watch?v=-ULKaqR9_XE',img:'img/event-4.webp',go:'Watch on YouTube',play:true}
   ];
   var cities=[['London',25.4],['Lagos',15.5],['New York',11.2],['Dubai',11.1],['Nairobi',9],['Accra',7],['Rio de Janeiro',5.1],['Cape Town',4.5],['Lisbon',4]];
   var mix=[['African',32.6],['European',28.4],['Asian',15],['Americas',12.8],['Emirati',11.2]];
