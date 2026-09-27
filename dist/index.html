@@ -1,0 +1,1387 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bluxe Century</title>
+<meta name="description" content="Bluxe Century connects people, ideas and opportunity across borders through editorial storytelling, film, regional perspectives and real-world relationships.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;500;700&family=Syncopate:wght@400;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap">
+<style>
+/* ================================================================
+   BLUXE CENTURY — "The Casting Room"
+   Bronze-cast craft · jewel-toned Afrofuturism · engineered precision
+   Jewel names follow Bluxe's own tiers: Sapphire, Ruby, Emerald, Amethyst
+   ================================================================ */
+:root{
+  color-scheme: dark;
+  --dd:url("data:image/png;base64,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");
+  --obsidian:#07060a;
+  --obsidian-2:#0e0b10;
+  --bone:#f4ede0;
+  --bone-dim:rgba(244,237,224,.74);
+  --bronze-d:#5a3818;
+  --bronze:#b07a3a;
+  --bronze-l:#e3bf83;
+  --gold:#a77e28;           /* brand gold */
+  --gold-lt:#d9ae62;
+  --emerald:#0b3a2f; --emerald-hi:#18a57c;
+  --sapphire:#0c1c47; --sapphire-hi:#3d7bff;
+  --ruby:#420b1b;     --ruby-hi:#e0385c;
+  --amethyst:#26103f; --amethyst-hi:#a06bff;
+  --patina:#5fb3a1;
+  --metal:linear-gradient(135deg,#4a2c12 0%,#b98246 22%,#f0d49c 38%,#8a5a28 55%,#d9ad6a 72%,#5a3818 100%);
+  --metal-soft:linear-gradient(135deg,#7b5226,#d8ad6c 45%,#8f6130);
+  --bg:var(--obsidian); --fg:var(--bone); --muted:var(--bone-dim); --accent:var(--gold-lt); --rule:rgba(244,237,224,.14); --surface:rgba(255,255,255,.04); --glow:var(--amethyst-hi);
+  --serif:"Scheherazade New","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --sans:"Raleway","Helvetica Neue",Arial,sans-serif;
+  --tech:"Syncopate","Eurostile","Microgramma","Arial Black",sans-serif;
+  --gut:clamp(16px,4vw,52px);
+  --max:1360px;
+}
+/* section worlds */
+.emerald{--bg:var(--emerald);--glow:var(--emerald-hi)}
+.sapphire{--bg:var(--sapphire);--glow:var(--sapphire-hi)}
+.ruby{--bg:var(--ruby);--glow:var(--ruby-hi)}
+.amethyst{--bg:var(--amethyst);--glow:var(--amethyst-hi)}
+.paper{--bg:#f2e9d8;--fg:#1b120b;--muted:#5a4a39;--accent:#83531d;--rule:rgba(27,18,11,.16);--surface:rgba(131,83,29,.07);--glow:#83531d;color-scheme:light}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--obsidian);color:var(--bone);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;margin:0}
+img{max-width:100%;height:auto;display:block}
+[hidden]{display:none!important}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold-lt);outline-offset:3px}
+[id]{scroll-margin-top:88px}
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--gut);position:relative}
+
+section,.band{color:var(--fg);position:relative;isolation:isolate;
+  background:
+    radial-gradient(120% 80% at 100% 0%,color-mix(in srgb,var(--glow) 16%,transparent),transparent 60%),
+    radial-gradient(90% 70% at 0% 100%,rgba(176,122,58,.10),transparent 60%),
+    var(--bg);}
+section.paper{background:
+    radial-gradient(90% 60% at 100% 0%,rgba(176,122,58,.18),transparent 60%),
+    repeating-linear-gradient(0deg,rgba(90,56,24,.035) 0 2px,transparent 2px 5px),
+    var(--bg)}
+/* engineered hairline grid on dark worlds */
+section:not(.paper)::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background-image:linear-gradient(90deg,rgba(244,237,224,.035) 1px,transparent 1px);
+  background-size:calc(100% / 12) 100%;}
+.pad{padding-block:clamp(72px,10vw,150px)}
+.pad-s{padding-block:clamp(52px,7vw,96px)}
+
+/* type */
+.eyebrow{font:700 10.5px/1.6 var(--tech);letter-spacing:.32em;text-transform:uppercase;color:var(--accent);margin:0 0 20px;display:flex;align-items:center;gap:14px}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor;flex:none}
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:400;letter-spacing:.005em;text-wrap:balance;margin:0}
+h1{font-size:clamp(50px,8.6vw,132px);line-height:.95}
+h2{font-size:clamp(36px,5.4vw,78px);line-height:1}
+h3{font-size:clamp(24px,2.4vw,32px);line-height:1.12}
+.g,em.g{font-style:normal;background:var(--metal);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% 100%}
+.paper .g{background:linear-gradient(135deg,#6e4213,#b07a3a 45%,#5a3818);-webkit-background-clip:text;background-clip:text}
+.lede{font-size:clamp(19px,1.7vw,23px);line-height:1.55;color:var(--fg);max-width:42ch;font-weight:300}
+p{margin:0}
+.muted{color:var(--muted)}
+.measure{max-width:64ch}
+.stack>*+*{margin-top:1.1em}
+.small{font-size:14px;line-height:1.55}
+.tag{display:inline-flex;align-items:center;gap:8px;font:700 9.5px/1 var(--tech);letter-spacing:.24em;text-transform:uppercase;color:var(--muted);border:1px solid var(--rule);padding:8px 11px}
+.tag.dated{color:var(--accent);border-color:currentColor}
+.num{font-family:var(--tech);font-weight:700;font-variant-numeric:tabular-nums;line-height:1;letter-spacing:-.02em}
+.tech{font:700 10px/1.6 var(--tech);letter-spacing:.28em;text-transform:uppercase;color:var(--muted)}
+
+/* buttons */
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 24px;font:700 10.5px/1 var(--tech);letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border:1px solid color-mix(in srgb,var(--fg) 60%,transparent);color:var(--fg);background:transparent;cursor:pointer;transition:box-shadow .3s,border-color .3s,background .3s,color .3s}
+.btn:hover{border-color:var(--glow);box-shadow:0 0 0 1px var(--glow),0 0 28px color-mix(in srgb,var(--glow) 55%,transparent)}
+.btn.solid{background:var(--metal);background-size:180% 100%;border:0;color:#1a0f05;box-shadow:inset 0 1px 0 rgba(255,245,220,.6),inset 0 -2px 0 rgba(60,30,8,.45),0 8px 24px rgba(0,0,0,.35);transition:background-position .6s,box-shadow .3s}
+.btn.solid:hover{background-position:100% 0;box-shadow:inset 0 1px 0 rgba(255,245,220,.6),0 0 30px rgba(227,191,131,.45)}
+.link{font:700 10.5px/1.4 var(--tech);letter-spacing:.2em;text-transform:uppercase;text-decoration:none;color:var(--accent);border-bottom:1px solid currentColor;padding-bottom:4px;display:inline-block}
+.link:hover{color:var(--fg)}
+
+/* woven band — strip-woven cloth in the four jewels and bronze */
+.weave{height:14px;background:
+   repeating-linear-gradient(0deg,rgba(0,0,0,.28) 0 1px,transparent 1px 3px),
+   repeating-linear-gradient(90deg,#0f6b52 0 22px,#d9ae62 22px 26px,#8f1631 26px 48px,#07060a 48px 51px,#1f47a8 51px 73px,#d9ae62 73px 77px,#5b2c91 77px 99px,#07060a 99px 102px);}
+.weave.thin{height:6px}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(7,6,10,.86);backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2);border-bottom:1px solid rgba(227,191,131,.22)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:70px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:24px;width:auto}
+.brand .c{font:700 9px/1 var(--tech);letter-spacing:.5em;color:var(--gold-lt);padding-left:12px;border-left:1px solid rgba(227,191,131,.3)}
+.nav{display:none;gap:clamp(14px,1.5vw,26px);align-items:center}
+.nav a{font:700 9.5px/1 var(--tech);letter-spacing:.2em;text-transform:uppercase;text-decoration:none;color:var(--bone-dim);padding:10px 0;border-bottom:1px solid transparent}
+.nav a:hover,.nav a[aria-current="page"]{color:var(--bone);border-bottom-color:var(--bronze-l)}
+.top .btn{min-height:42px;padding:0 16px;font-size:9.5px}
+.menu-btn{display:inline-flex;align-items:center;gap:10px;background:none;border:1px solid rgba(227,191,131,.35);color:var(--bone);min-height:44px;padding:0 14px;font:700 9.5px/1 var(--tech);letter-spacing:.22em;text-transform:uppercase;cursor:pointer}
+.menu-btn i{display:block;width:18px;height:1px;background:currentColor;box-shadow:0 5px 0 currentColor,0 -5px 0 currentColor}
+.top .cta{display:none}
+@media (min-width:1180px){.nav{display:flex}.menu-btn{display:none}.top .cta{display:inline-flex}}
+.sheet{position:fixed;inset:0;z-index:60;background:radial-gradient(100% 60% at 100% 0%,rgba(160,107,255,.18),transparent 60%),radial-gradient(80% 60% at 0% 100%,rgba(176,122,58,.2),transparent 60%),var(--obsidian);padding:calc(env(safe-area-inset-top,0px) + 18px) var(--gut) calc(env(safe-area-inset-bottom,0px) + 24px);display:flex;flex-direction:column;overflow-y:auto}
+.sheet-head{display:flex;justify-content:space-between;align-items:center;height:52px}
+.sheet nav{display:flex;flex-direction:column;margin-top:28px}
+.sheet nav a{font:400 clamp(30px,8vw,46px)/1.25 var(--serif);text-decoration:none;padding:10px 0;border-bottom:1px solid rgba(227,191,131,.18);display:flex;justify-content:space-between;align-items:baseline}
+.sheet nav a small{font:700 9px/1 var(--tech);letter-spacing:.24em;color:var(--gold-lt);text-transform:uppercase}
+.sheet .btns{margin-top:28px}
+
+/* views */
+.view{display:none}
+.view.on{display:block;animation:fade .6s ease both}
+@keyframes fade{from{opacity:.001}to{opacity:1}}
+
+/* ---------------- HERO: the casting room ---------------- */
+.hero{padding:0;overflow:hidden;background:var(--obsidian)}
+.hero-wall{position:absolute;inset:0;z-index:-2;display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:1fr;gap:6px;padding:6px;background:linear-gradient(135deg,#3b240f,#8a5a28 40%,#3b240f)}
+.hero-wall>div{overflow:hidden;position:relative}
+.hero-wall img{width:100%;height:100%;object-fit:cover;filter:saturate(1.15) contrast(1.05)}
+.hero-wall>div::after{content:"";position:absolute;width:10px;height:10px;border-radius:50%;left:6px;top:6px;background:radial-gradient(circle at 35% 35%,#f6dfae,#9a6a34 60%,#3b240f)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:
+  linear-gradient(90deg,rgba(7,6,10,.97) 0%,rgba(7,6,10,.88) 38%,rgba(7,6,10,.45) 70%,rgba(7,6,10,.2) 100%),
+  linear-gradient(0deg,rgba(7,6,10,.9),transparent 35%)}
+@media (max-width:979px){.hero::after{background:linear-gradient(180deg,rgba(7,6,10,.55) 0%,rgba(7,6,10,.92) 55%,var(--obsidian) 100%)}}
+.hero-grid{display:grid;gap:clamp(36px,5vw,64px);align-items:center;padding-block:clamp(44px,7vw,110px) clamp(56px,8vw,120px)}
+@media (min-width:980px){.hero-grid{grid-template-columns:1.08fr .92fr}}
+.hero h1 .g{display:block}
+.hero .lede{margin-top:28px}
+.hero .btns{margin-top:38px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:12px 26px;margin-top:44px;font:700 9.5px/1.4 var(--tech);letter-spacing:.24em;text-transform:uppercase;color:var(--bone-dim)}
+.hero-meta span{display:inline-flex;align-items:center;gap:10px}
+.hero-meta span::before{content:"";width:7px;height:7px;transform:rotate(45deg);background:var(--metal)}
+.coords{margin-bottom:26px;font:700 9.5px/1.6 var(--tech);letter-spacing:.26em;color:var(--bone-dim)}
+.coords b{color:var(--gold-lt);font-weight:700}
+
+/* the cast mark in its bezel */
+.bezel{position:relative;width:min(560px,100%);aspect-ratio:1;margin-inline:auto}
+.bezel svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.bezel .ring{animation:spin 90s linear infinite;transform-origin:50% 50%}
+@keyframes spin{to{transform:rotate(360deg)}}
+.bezel .core{position:absolute;inset:19%;border-radius:50%;background:
+   radial-gradient(circle at 30% 25%,rgba(160,107,255,.35),transparent 55%),
+   radial-gradient(circle at 75% 80%,rgba(24,165,124,.28),transparent 55%),
+   radial-gradient(circle,#140c1c,#07060a 70%);
+   box-shadow:inset 0 0 0 1px rgba(227,191,131,.35),inset 0 0 60px rgba(0,0,0,.8),0 0 80px rgba(160,107,255,.25)}
+.cast{position:absolute;inset:27%;
+  -webkit-mask:var(--dd) center/contain no-repeat;mask:var(--dd) center/contain no-repeat;
+  background:linear-gradient(110deg,transparent 35%,rgba(255,244,214,.95) 48%,transparent 60%) , var(--metal);
+  background-size:260% 100%,100% 100%;background-position:120% 0,0 0;animation:sheen 6s ease-in-out 1s infinite;
+  filter:drop-shadow(0 6px 18px rgba(0,0,0,.6))}
+@keyframes sheen{0%,55%{background-position:120% 0,0 0}100%{background-position:-60% 0,0 0}}
+.bezel .lbl{position:absolute;left:0;right:0;bottom:-8px;text-align:center}
+
+/* ---------------- gallery strip ---------------- */
+.strip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(240px,26%);gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px var(--gut) 26px;scrollbar-width:thin;scrollbar-color:var(--bronze) transparent}
+@media (max-width:700px){.strip{grid-auto-columns:78%}}
+.strip figure{margin:0;scroll-snap-align:start}
+.strip figcaption{display:flex;justify-content:space-between;margin-top:12px;font:700 9.5px/1.4 var(--tech);letter-spacing:.24em;text-transform:uppercase;color:var(--bone-dim)}
+.strip figcaption b{color:var(--gold-lt);font-weight:700}
+
+/* ---------------- bronze plaque frames ---------------- */
+.plaque,.cover .im,.fig>.ratio-45,.fig>.ratio-32,.fig>.ratio-11,.ratio-11.framed{position:relative;padding:7px;background:var(--metal);box-shadow:inset 0 1px 0 rgba(255,240,205,.55),inset 0 -1px 0 rgba(40,20,5,.6),0 24px 50px rgba(0,0,0,.45)}
+.plaque>img,.cover .im>img,.fig>[class^="ratio"]>img,.ratio-11.framed>img{width:100%;height:100%;object-fit:cover;box-shadow:inset 0 0 0 1px rgba(0,0,0,.4)}
+.plaque::before,.plaque::after,.cover .im::before,.cover .im::after,.fig>[class^="ratio"]::before,.fig>[class^="ratio"]::after{content:"";position:absolute;width:11px;height:11px;border-radius:50%;z-index:2;background:radial-gradient(circle at 35% 30%,#fff1cc,#b98246 55%,#3b240f);box-shadow:0 1px 2px rgba(0,0,0,.6)}
+.plaque::before,.cover .im::before,.fig>[class^="ratio"]::before{left:14px;top:14px}
+.plaque::after,.cover .im::after,.fig>[class^="ratio"]::after{right:14px;bottom:14px}
+.plaque{aspect-ratio:4/5;overflow:hidden}
+.plaque.wide{aspect-ratio:3/2}
+.plaque.sq{aspect-ratio:1}
+
+/* statement */
+.statement{font-family:var(--serif);font-size:clamp(28px,3.8vw,54px);line-height:1.14;max-width:22ch;text-wrap:balance}
+.statement.wide{max-width:30ch}
+
+/* split & grids */
+.split{display:grid;gap:clamp(32px,5vw,80px)}
+@media (min-width:900px){.split{grid-template-columns:5fr 7fr}.split.rev{grid-template-columns:7fr 5fr}.split.even{grid-template-columns:1fr 1fr}}
+.cols3{display:grid;gap:clamp(28px,3vw,44px)}
+@media (min-width:760px){.cols3{grid-template-columns:repeat(3,1fr)}}
+.cols2{display:grid;gap:clamp(28px,3vw,44px)}
+@media (min-width:760px){.cols2{grid-template-columns:repeat(2,1fr)}}
+.rule-top{border-top:1px solid var(--rule);padding-top:22px}
+
+/* formats: four jewel tiles */
+.formats{display:grid;gap:14px}
+@media (min-width:760px){.formats{grid-template-columns:1fr 1fr}}
+.fmt{position:relative;display:grid;grid-template-rows:auto 1fr;min-height:340px;text-decoration:none;overflow:hidden;border:1px solid rgba(227,191,131,.35);background:#000}
+.fmt>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1);filter:saturate(1.15)}
+.fmt::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(7,6,10,.1) 20%,var(--tint,rgba(7,6,10,.92)) 78%)}
+.fmt>div{position:relative;z-index:2;align-self:end;grid-row:2;padding:clamp(22px,2.6vw,34px)}
+.fmt .tech{color:var(--gold-lt);display:block;margin-bottom:10px}
+.fmt h3{font-size:clamp(28px,2.8vw,38px);margin-bottom:8px}
+.fmt p{color:var(--bone-dim);max-width:40ch}
+.fmt:hover>img{transform:scale(1.05)}
+.fmt:hover{border-color:var(--bronze-l)}
+.fmt.t-em{--tint:rgba(8,48,38,.95)} .fmt.t-sa{--tint:rgba(10,24,64,.95)} .fmt.t-ru{--tint:rgba(62,8,24,.95)} .fmt.t-am{--tint:rgba(36,14,62,.95)}
+
+/* figures */
+.fig{position:relative;margin:0}
+.fig img{width:100%;height:100%;object-fit:cover}
+.fig figcaption{font:600 12px/1.5 var(--sans);letter-spacing:.04em;color:var(--muted);margin-top:12px}
+.ratio-45{aspect-ratio:4/5;overflow:hidden}
+.ratio-32{aspect-ratio:3/2;overflow:hidden}
+.ratio-11{aspect-ratio:1;overflow:hidden}
+
+/* stats: engraved plates */
+.stats{display:grid;gap:14px}
+@media (min-width:700px){.stats{grid-template-columns:repeat(3,1fr)}}
+.stat{padding:30px 28px;border:1px solid rgba(227,191,131,.3);background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.01));position:relative}
+.stat::before{content:"";position:absolute;left:0;top:0;width:44px;height:3px;background:var(--metal)}
+.paper .stat{border-color:rgba(131,83,29,.3);background:rgba(255,255,255,.35)}
+.stat .num{font-size:clamp(40px,5vw,68px)}
+.stat .num,.cs-figs .num{background:var(--metal);-webkit-background-clip:text;background-clip:text;color:transparent}
+.paper .stat .num{background:linear-gradient(135deg,#6e4213,#b07a3a 45%,#5a3818);-webkit-background-clip:text;background-clip:text}
+.stat p{margin-top:14px;max-width:30ch}
+.source{font-size:13px;color:var(--muted);margin-top:20px;max-width:84ch}
+
+/* routes */
+.routes{display:grid;gap:14px}
+@media (min-width:860px){.routes{grid-template-columns:repeat(3,1fr)}}
+.route{position:relative;overflow:hidden;padding:clamp(28px,3vw,40px);display:flex;flex-direction:column;gap:14px;text-decoration:none;min-height:420px;border:1px solid rgba(227,191,131,.35);background:#000}
+.route>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;transition:transform 1s}
+.route::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(7,6,10,.2),var(--tint,rgba(7,6,10,.95)) 70%)}
+.route>*:not(img){position:relative;z-index:2}
+.route>.eyebrow{margin-top:auto}
+.route h3{font-size:clamp(30px,2.8vw,40px)}
+.route p{color:var(--bone-dim)}
+.route .link{align-self:flex-start}
+.route:hover>img{transform:scale(1.05)}
+.route.t-em{--tint:rgba(8,48,38,.96)} .route.t-sa{--tint:rgba(10,24,64,.96)} .route.t-am{--tint:rgba(36,14,62,.96)}
+
+/* proverb */
+.proverb{text-align:center}
+.proverb blockquote{margin:0 auto;font-family:var(--serif);font-size:clamp(32px,4.6vw,66px);line-height:1.1;max-width:20ch;text-wrap:balance}
+.proverb cite{display:block;margin-top:28px;font:700 9.5px/1.6 var(--tech);letter-spacing:.26em;text-transform:uppercase;color:var(--gold-lt);font-style:normal}
+.proverb .cast-sm{width:64px;height:64px;margin:0 auto 36px;-webkit-mask:var(--dd) center/contain no-repeat;mask:var(--dd) center/contain no-repeat;background:var(--metal)}
+
+/* timeline */
+.timeline{list-style:none;margin:0;padding:0;border-left:1px solid rgba(227,191,131,.35)}
+.timeline li{position:relative;padding:0 0 36px 32px}
+.timeline li::before{content:"";position:absolute;left:-7px;top:6px;width:13px;height:13px;transform:rotate(45deg);background:var(--metal);box-shadow:0 0 14px rgba(227,191,131,.4)}
+.timeline .when{font:700 9.5px/1.4 var(--tech);letter-spacing:.26em;text-transform:uppercase;color:var(--gold-lt)}
+.timeline h3{font-size:clamp(23px,2vw,29px);margin:8px 0 6px}
+
+/* principles */
+.principle{border-top:1px solid var(--rule);padding-top:24px;position:relative}
+.principle::before{content:"";position:absolute;top:-2px;left:0;width:56px;height:3px;background:var(--metal)}
+.principle .k{font:700 10px/1 var(--tech);letter-spacing:.28em;text-transform:uppercase;color:var(--accent)}
+.principle h3{margin:16px 0 12px}
+
+/* chips */
+.chips{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;margin-bottom:28px;scrollbar-width:thin}
+.chip{flex:none;scroll-snap-align:start;min-height:44px;padding:0 18px;background:transparent;color:var(--muted);border:1px solid var(--rule);font:700 9.5px/1 var(--tech);letter-spacing:.2em;text-transform:uppercase;cursor:pointer;transition:all .25s}
+.chip:hover{color:var(--fg);border-color:var(--glow)}
+.chip[aria-pressed="true"]{color:#1a0f05;background:var(--metal);border-color:transparent}
+
+/* story list */
+.stories{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.story{display:grid;grid-template-columns:52px 1fr;gap:6px 18px;padding:24px 0;border-bottom:1px solid var(--rule);transition:background .3s}
+.story:hover{background:linear-gradient(90deg,rgba(227,191,131,.06),transparent)}
+@media (min-width:860px){.story{grid-template-columns:76px 1.1fr 1.4fr 130px;align-items:baseline}}
+.story .n{font:700 18px/1 var(--tech);background:var(--metal);-webkit-background-clip:text;background-clip:text;color:transparent;font-variant-numeric:tabular-nums}
+.story .s{font:700 9px/1.5 var(--tech);letter-spacing:.22em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:8px}
+.story h3{font-size:clamp(23px,2vw,29px)}
+.story h3 a:hover{color:var(--gold-lt)}
+.story p{grid-column:2;color:var(--muted);font-size:15.5px}
+.story .rt{grid-column:2;font:700 9px/1 var(--tech);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+@media (min-width:860px){.story p{grid-column:auto}.story .rt{grid-column:auto;text-align:right}}
+
+/* covers */
+.covers{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+@media (min-width:700px){.covers{grid-template-columns:repeat(4,1fr)}}
+.cover{text-decoration:none;display:flex;flex-direction:column;gap:12px}
+.cover .im{aspect-ratio:3/4;overflow:hidden}
+.cover .im img{transition:transform .8s}
+a.cover:hover .im img{transform:scale(1.04)}
+.cover b{font:400 21px/1.2 var(--serif)}
+.cover span{font:700 9px/1.5 var(--tech);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+
+/* reading room edition object */
+.room{display:grid;gap:clamp(32px,5vw,72px);align-items:center}
+@media (min-width:900px){.room{grid-template-columns:.85fr 1.15fr}}
+.edition{aspect-ratio:3/4;max-width:460px;width:100%;margin-inline:auto;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(24px,3vw,38px);position:relative;overflow:hidden;
+  background:
+   radial-gradient(90% 60% at 80% 20%,rgba(160,107,255,.45),transparent 60%),
+   radial-gradient(80% 60% at 10% 90%,rgba(61,123,255,.35),transparent 60%),
+   repeating-linear-gradient(45deg,rgba(227,191,131,.06) 0 1px,transparent 1px 14px),
+   #0b0714;
+  border:7px solid transparent;border-image:var(--metal) 1;box-shadow:0 30px 70px rgba(0,0,0,.6),0 0 90px rgba(160,107,255,.25)}
+.edition .wm{width:100%}
+.edition .vol{font:700 10px/1.6 var(--tech);letter-spacing:.24em;text-transform:uppercase;color:var(--gold-lt)}
+.edition .pl{font:700 8.5px/1.9 var(--tech);letter-spacing:.2em;text-transform:uppercase;color:var(--bone-dim)}
+.edition .mk{position:absolute;right:-16%;top:28%;width:76%;aspect-ratio:1;opacity:.5;-webkit-mask:var(--dd) center/contain no-repeat;mask:var(--dd) center/contain no-repeat;background:var(--metal)}
+.edition .tagline{font:400 clamp(28px,3vw,40px)/1.05 var(--serif);max-width:11ch;position:relative}
+
+/* archive */
+.arch{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+@media (min-width:760px){.arch{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1100px){.arch{grid-template-columns:repeat(3,1fr)}}
+.item{display:flex;flex-direction:column;border:1px solid var(--rule);background:linear-gradient(170deg,rgba(255,255,255,.05),rgba(255,255,255,.01));transition:border-color .3s,box-shadow .3s}
+.item:hover{border-color:var(--glow);box-shadow:0 0 30px color-mix(in srgb,var(--glow) 30%,transparent)}
+.item a{text-decoration:none;display:flex;flex-direction:column;height:100%}
+.item .th{aspect-ratio:16/10;overflow:hidden;position:relative;background:#120c16}
+.item .th img{width:100%;height:100%;object-fit:cover;filter:saturate(1.1)}
+.item .th.txt{display:grid;place-items:center;padding:24px;background:radial-gradient(80% 80% at 70% 20%,rgba(24,165,124,.35),transparent 60%),repeating-linear-gradient(45deg,rgba(227,191,131,.07) 0 1px,transparent 1px 12px),#0b1a15}
+.item .th.txt span{font:400 clamp(22px,2vw,28px)/1.15 var(--serif);text-align:center;max-width:16ch}
+.item .play{position:absolute;left:16px;bottom:16px;width:52px;height:52px;border-radius:50%;background:rgba(7,6,10,.7);border:2px solid var(--bronze-l);display:grid;place-items:center;box-shadow:0 0 24px rgba(160,107,255,.45)}
+.item .play::after{content:"";border-left:14px solid var(--bone);border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:4px}
+.item .bd{padding:22px 22px 24px;display:flex;flex-direction:column;gap:9px;flex:1}
+.item .meta{display:flex;flex-wrap:wrap;gap:6px 14px;font:700 8.5px/1.5 var(--tech);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.item .meta .f{color:var(--gold-lt)}
+.item h3{font-size:clamp(21px,1.8vw,25px)}
+.item p{font-size:15px;color:var(--muted)}
+.item .go{margin-top:auto;padding-top:10px;font:700 9.5px/1.4 var(--tech);letter-spacing:.2em;text-transform:uppercase;color:var(--fg)}
+.item a:hover .go{color:var(--gold-lt)}
+.search{width:100%;max-width:440px;min-height:50px;background:rgba(255,255,255,.04);border:1px solid rgba(227,191,131,.35);color:var(--fg);padding:0 16px;font:400 16px var(--sans);margin-bottom:18px}
+
+/* case study */
+.cs-figs{display:grid;gap:14px}
+@media (min-width:760px){.cs-figs{grid-template-columns:repeat(3,1fr)}}
+.cs-figs>div{padding:30px;border:1px solid rgba(227,191,131,.35);background:linear-gradient(160deg,rgba(224,56,92,.16),rgba(255,255,255,.02))}
+.cs-figs .num{font-size:clamp(56px,6.4vw,92px)}
+.cs-figs .num sup{font-size:.42em;vertical-align:.9em;margin-left:2px}
+.steps{counter-reset:s;list-style:none;margin:0;padding:0;display:grid;gap:22px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:56px 1fr;gap:16px}
+.steps li::before{content:counter(s,decimal-leading-zero);font:700 20px/1.3 var(--tech);background:var(--metal);-webkit-background-clip:text;background-clip:text;color:transparent}
+.listcols{columns:2 220px;column-gap:32px;list-style:none;padding:0;margin:0}
+.listcols li{break-inside:avoid;padding:12px 0 12px 22px;border-bottom:1px solid var(--rule);font-size:15.5px;position:relative}
+.listcols li::before{content:"";position:absolute;left:0;top:20px;width:7px;height:7px;transform:rotate(45deg);background:var(--metal)}
+.quote{border-top:1px solid var(--rule);padding-top:24px;position:relative}
+.quote::before{content:"\201C";position:absolute;right:0;top:-6px;font:400 90px/1 var(--serif);background:var(--metal);-webkit-background-clip:text;background-clip:text;color:transparent;opacity:.8}
+.quote q{font:400 clamp(21px,1.9vw,26px)/1.32 var(--serif);display:block;quotes:"\201C" "\201D";padding-right:40px}
+.quote .who{margin-top:18px;font:700 9px/1.6 var(--tech);letter-spacing:.22em;text-transform:uppercase;color:var(--gold-lt)}
+.clients-plate{padding:clamp(20px,3vw,36px);background:#060508;border:7px solid transparent;border-image:var(--metal) 1;margin-top:14px}
+
+/* bars */
+.bars{display:grid;gap:13px;font-variant-numeric:tabular-nums}
+.bar{display:grid;grid-template-columns:118px 1fr 58px;align-items:center;gap:14px;font-size:15px}
+.bar .t{height:10px;background:rgba(244,237,224,.1);position:relative}
+.bar .t i{position:absolute;inset:0 auto 0 0;background:var(--metal)}
+.bar .v{text-align:right;color:var(--muted);font:700 11px/1 var(--tech);letter-spacing:.06em}
+
+/* downloads */
+.docs{display:grid;gap:14px}
+@media (min-width:760px){.docs{grid-template-columns:repeat(3,1fr)}}
+.doc{padding:28px;display:flex;flex-direction:column;gap:10px;text-decoration:none;min-height:240px;border:1px solid rgba(227,191,131,.35);background:linear-gradient(165deg,rgba(255,255,255,.06),rgba(255,255,255,.01));position:relative;transition:box-shadow .3s,border-color .3s}
+.doc::before{content:"";position:absolute;left:0;top:0;right:0;height:4px;background:var(--metal)}
+.doc h3{font-size:26px}
+.doc .go{margin-top:auto;font:700 9.5px/1.4 var(--tech);letter-spacing:.2em;text-transform:uppercase;color:var(--gold-lt)}
+.doc:hover{border-color:var(--glow);box-shadow:0 0 30px color-mix(in srgb,var(--glow) 35%,transparent)}
+.oldlist{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.oldlist li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 20px;padding:16px 0;border-bottom:1px solid var(--rule);font-size:15.5px}
+details summary{list-style:none}
+details summary::-webkit-details-marker{display:none}
+
+/* partner types */
+.ptypes{display:grid;gap:14px}
+@media (min-width:900px){.ptypes{grid-template-columns:repeat(3,1fr)}}
+.ptype{padding:30px;display:flex;flex-direction:column;gap:12px;border:1px solid rgba(227,191,131,.3);background:linear-gradient(170deg,var(--pt,rgba(255,255,255,.06)),rgba(255,255,255,.01) 60%)}
+.ptype:nth-child(1){--pt:rgba(61,123,255,.2)} .ptype:nth-child(2){--pt:rgba(224,56,92,.2)} .ptype:nth-child(3){--pt:rgba(24,165,124,.22)}
+.ptype ul{margin:6px 0 0;padding:0;list-style:none}
+.ptype li{padding:10px 0 10px 20px;border-bottom:1px solid var(--rule);font-size:15.5px;position:relative}
+.ptype li::before{content:"";position:absolute;left:0;top:19px;width:6px;height:6px;transform:rotate(45deg);background:var(--metal)}
+
+/* form */
+.form{display:grid;gap:22px}
+@media (min-width:760px){.form .two{display:grid;grid-template-columns:1fr 1fr;gap:22px}}
+.field{display:flex;flex-direction:column;gap:8px}
+.field label,.field legend{font:700 9px/1.5 var(--tech);letter-spacing:.22em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:4px}
+fieldset{border:0;padding:0;margin:0}
+.field input,.field select,.field textarea{background:rgba(0,0,0,.25);border:1px solid rgba(227,191,131,.3);color:var(--fg);min-height:52px;padding:12px 14px;font:400 16px/1.4 var(--sans);width:100%}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--glow);box-shadow:0 0 0 1px var(--glow),0 0 22px color-mix(in srgb,var(--glow) 40%,transparent)}
+.field select option{background:#0c1c47;color:var(--bone)}
+.field textarea{min-height:120px;resize:vertical}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.opt span{display:inline-flex;align-items:center;min-height:44px;padding:0 15px;border:1px solid rgba(227,191,131,.3);font-size:14.5px;color:var(--muted);transition:all .2s}
+.opt input:checked+span{border-color:var(--bronze-l);color:#1a0f05;background:var(--metal)}
+.opt input:focus-visible+span{outline:2px solid var(--gold-lt);outline-offset:2px}
+.out{border:1px solid var(--bronze-l);padding:24px;background:rgba(0,0,0,.3)}
+.out pre{white-space:pre-wrap;font:400 14.5px/1.6 var(--sans);margin:12px 0 18px;color:var(--fg)}
+.err{color:#ff9aa8;font-size:14px}
+
+/* contact */
+.contacts{display:grid;gap:14px}
+@media (min-width:760px){.contacts{grid-template-columns:repeat(2,1fr)}}
+.contact{padding:28px;display:flex;flex-direction:column;gap:10px;border:1px solid rgba(227,191,131,.3);background:linear-gradient(170deg,rgba(255,255,255,.05),rgba(255,255,255,.01))}
+.addr{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.addr code{font:600 16px/1.3 var(--sans);color:var(--fg);user-select:all;word-break:break-all}
+.copy{min-height:38px;padding:0 13px;background:transparent;border:1px solid rgba(227,191,131,.35);color:var(--gold-lt);font:700 8.5px/1 var(--tech);letter-spacing:.2em;text-transform:uppercase;cursor:pointer}
+.copy:hover{background:var(--metal);color:#1a0f05}
+
+/* page heads: image-led */
+.phead{padding-block:clamp(72px,10vw,150px) clamp(48px,6vw,88px);background:
+   linear-gradient(90deg,rgba(7,6,10,.97) 0%,rgba(7,6,10,.86) 42%,rgba(7,6,10,.35) 100%),
+   var(--ph,none) center/cover no-repeat,
+   var(--obsidian)}
+@media (max-width:899px){.phead{background:linear-gradient(180deg,rgba(7,6,10,.7),rgba(7,6,10,.95) 70%),var(--ph,none) center/cover no-repeat,var(--obsidian)}}
+.phead::before{display:none}
+.phead::after{content:"";position:absolute;left:0;right:0;bottom:0;height:10px;background:
+   repeating-linear-gradient(0deg,rgba(0,0,0,.28) 0 1px,transparent 1px 3px),
+   repeating-linear-gradient(90deg,#0f6b52 0 22px,#d9ae62 22px 26px,#8f1631 26px 48px,#07060a 48px 51px,#1f47a8 51px 73px,#d9ae62 73px 77px,#5b2c91 77px 99px,#07060a 99px 102px)}
+.phead h1{font-size:clamp(46px,7.4vw,112px)}
+.phead .lede{margin-top:26px;max-width:46ch}
+
+/* footer */
+footer{padding-block:64px 40px;background:radial-gradient(90% 80% at 100% 0%,rgba(160,107,255,.14),transparent 60%),var(--obsidian)}
+.foot{display:grid;gap:36px}
+@media (min-width:900px){.foot{grid-template-columns:1.2fr 1fr 1fr 1fr}}
+.foot h4{font:700 9.5px/1 var(--tech);letter-spacing:.24em;text-transform:uppercase;color:var(--gold-lt);margin:0 0 18px}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
+.foot a{text-decoration:none;font-size:15px;color:var(--bone-dim)}
+.foot a:hover{color:var(--bone)}
+.legal{margin-top:48px;padding-top:22px;border-top:1px solid rgba(227,191,131,.2);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font:700 8.5px/1.8 var(--tech);letter-spacing:.18em;text-transform:uppercase;color:var(--bone-dim)}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+<link rel="stylesheet" href="/refinement.css">
+
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="Bluxe Century home"><img src="img/bluxe-logo-white.png" alt="Bluxe" width="150" height="24"><span class="c">CENTURY</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#idea">The Idea</a>
+      <a href="#platform">Platform</a>
+      <a href="#magazine">Magazine</a>
+      <a href="#archive">Archive &amp; Film</a>
+      <a href="#record">Track Record</a>
+      <a href="#partners">Partners</a>
+      <a href="#membership">Membership</a>
+    </nav>
+    <a class="btn solid cta" href="#partners">Partner with Bluxe</a>
+    <button class="menu-btn" id="menuOpen" aria-expanded="false" aria-controls="sheet"><i></i>Menu</button>
+  </div>
+</header>
+
+<div class="sheet" id="sheet" hidden role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="sheet-head">
+    <a class="brand" href="#home"><img src="img/bluxe-logo-white.png" alt="Bluxe" width="150" height="24"><span class="c">CENTURY</span></a>
+    <button class="menu-btn" id="menuClose">Close</button>
+  </div>
+  <nav aria-label="Menu">
+    <a href="#home">Home <small>Start</small></a>
+    <a href="#idea">The Idea <small>Heritage</small></a>
+    <a href="#platform">Platform <small>Formats</small></a>
+    <a href="#magazine">Magazine <small>Read</small></a>
+    <a href="#archive">Archive &amp; Film <small>Browse</small></a>
+    <a href="#record">Track Record <small>Evidence</small></a>
+    <a href="#partners">Partners <small>Audience</small></a>
+    <a href="#membership">Membership <small>Contact</small></a>
+  </nav>
+  <div class="btns">
+    <a class="btn solid" href="#magazine">Read the Magazine</a>
+    <a class="btn" href="#partners">Partner with Bluxe</a>
+  </div>
+</div>
+
+<main id="main">
+<!-- ============ HOME ============ -->
+<div class="view" data-view="home">
+  <section class="hero">
+    <div class="hero-wall" aria-hidden="true"><div><img src="img/c-balloons.webp" alt="" loading="eager"></div><div><img src="img/c-runway.webp" alt="" loading="eager"></div><div><img src="img/c-style.webp" alt="" loading="eager"></div><div><img src="img/c-dining.webp" alt="" loading="eager"></div><div><img src="img/afwl-runway.webp" alt="" loading="eager"></div><div><img src="img/c-resort.webp" alt="" loading="eager"></div><div><img src="img/c-reader.webp" alt="" loading="eager"></div><div><img src="img/c-friends.webp" alt="" loading="eager"></div><div><img src="img/c-car.webp" alt="" loading="eager"></div><div><img src="img/event-2.webp" alt="" loading="eager"></div><div><img src="img/c-villa.webp" alt="" loading="eager"></div><div><img src="img/c-sneaker.webp" alt="" loading="eager"></div><div><img src="img/c-abaya.webp" alt="" loading="eager"></div><div><img src="img/gold.webp" alt="" loading="eager"></div><div><img src="img/c-rings.webp" alt="" loading="eager"></div><div><img src="img/butterfly.webp" alt="" loading="eager"></div><div><img src="img/event-4.webp" alt="" loading="eager"></div><div><img src="img/event-3.webp" alt="" loading="eager"></div></div>
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Rooted in wisdom. <span class="g">Open to the world.</span></h1>
+        <p class="lede">Bluxe Century connects people, ideas and opportunity across borders through editorial storytelling, film, regional perspectives and real-world relationships.</p>
+        <div class="btns">
+          <a class="btn solid" href="#magazine">Read the Magazine</a>
+          <a class="btn" href="#platform">Explore the Platform</a>
+          <a class="btn" href="#partners">Partner with Bluxe</a>
+        </div>
+      </div>
+      <div>
+        <div class="bezel" role="img" aria-label="The Dame-Dame symbol cast in bronze, set in a bezel engraved Intelligence, Ingenuity, Strategy">
+          <div class="core"></div>
+          <svg viewBox="0 0 400 400" aria-hidden="true">
+            <defs>
+              <linearGradient id="brz" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a2c12"/><stop offset=".25" stop-color="#c38c4c"/><stop offset=".42" stop-color="#f3d7a0"/><stop offset=".6" stop-color="#8a5a28"/><stop offset=".8" stop-color="#e0b572"/><stop offset="1" stop-color="#5a3818"/></linearGradient>
+              <path id="rp" d="M200,200 m-160,0 a160,160 0 1,1 320,0 a160,160 0 1,1 -320,0"/>
+            </defs>
+            <circle cx="200" cy="200" r="196" fill="none" stroke="url(#brz)" stroke-width="3"/>
+            <circle cx="200" cy="200" r="178" fill="none" stroke="url(#brz)" stroke-width="22" opacity=".22"/>
+            <g class="ring">
+              <g id="ticks"></g>
+              <text font-family="Syncopate, Arial Black, sans-serif" font-weight="700" font-size="10.5" letter-spacing="5.2" fill="url(#brz)"><textPath href="#rp">INTELLIGENCE · INGENUITY · STRATEGY · INTELLIGENCE · INGENUITY · STRATEGY ·</textPath></text>
+            </g>
+            <circle cx="200" cy="200" r="150" fill="none" stroke="url(#brz)" stroke-width="1.5"/>
+          </svg>
+          <div class="cast"></div>
+          <p class="tech lbl">Dame-Dame · cast in the Bluxe foundry</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="weave"></div>
+  <section class="pad-s world-section" style="padding-inline:0">
+    <div class="wrap" style="display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:28px">
+      <div><p class="eyebrow">The world we cover</p><h2>Many perspectives. <span class="g">One lens.</span></h2></div>
+      <p class="tech world-swipe">Swipe to explore →</p>
+    </div>
+    <div class="strip world-grid">
+      <figure><div class="plaque"><img src="img/c-balloons.webp" alt="Hot-air balloons over a rocky valley at sunrise" loading="lazy"></div><figcaption><b>Travel</b><span>01</span></figcaption></figure>
+      <figure><div class="plaque"><img src="img/c-style.webp" alt="Two men, one holding a blue woven loafer" loading="lazy"></div><figcaption><b>Culture</b><span>02</span></figcaption></figure>
+      <figure><div class="plaque"><img src="img/c-resort.webp" alt="Aerial view of a white coastal resort" loading="lazy"></div><figcaption><b>Property</b><span>03</span></figcaption></figure>
+      <figure><div class="plaque"><img src="img/c-runway.webp" alt="A designer and model on a runway in a vivid printed gown" loading="lazy"></div><figcaption><b>People</b><span>04</span></figcaption></figure>
+      <figure><div class="plaque"><img src="img/c-dining.webp" alt="A chef plating a dish" loading="lazy"></div><figcaption><b>Lifestyle</b><span>05</span></figcaption></figure>
+      <figure><div class="plaque"><img src="img/c-car.webp" alt="A classic British sports car outside a stone house" loading="lazy"></div><figcaption><b>Motoring</b><span>06</span></figcaption></figure>
+      <figure><div class="plaque"><img src="img/c-abaya.webp" alt="A woman in a black abaya and niqab" loading="lazy"></div><figcaption><b>The Gulf</b><span>07</span></figcaption></figure>
+      <figure><div class="plaque"><img src="img/c-villa.webp" alt="A villa and pool at dusk" loading="lazy"></div><figcaption><b>Escapes</b><span>08</span></figcaption></figure>
+      <figure><div class="plaque"><img src="img/c-sneaker.webp" alt="A designer trainer displayed in front of a luxury car grille" loading="lazy"></div><figcaption><b>Design</b><span>09</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="paper pad">
+    <div class="wrap split">
+      <div><p class="eyebrow">Why it exists</p></div>
+      <div class="stack">
+        <p class="statement wide">Most of us now live somewhere our grandparents did not. Bluxe Century began by writing for the African diaspora, and found a story that belongs to anyone who has made a life across borders.</p>
+        <p class="measure muted">The foundation is African: Dame-Dame, the Adinkra symbol of intelligence, ingenuity and strategy. The conversation is international: property, people, technology, travel, lifestyle and culture, told for readers of every background who value thought, character, creativity and progress.</p>
+        <p><a class="link" href="#idea">Read the idea</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad">
+    <div class="wrap">
+      <div class="split" style="margin-bottom:clamp(36px,5vw,64px)">
+        <div><p class="eyebrow">The platform</p><h2>One point of view, <span class="g">four formats.</span></h2></div>
+        <p class="lede muted" style="align-self:end">Each format does a different job for readers and for partners. Together they keep a story alive from the page to the room.</p>
+      </div>
+      <div class="formats">
+        <a class="fmt t-sa" href="#platform"><img src="img/c-villa.webp" alt="" loading="lazy"><div><span class="tech">Format 01</span><h3>The Annual</h3><p>The main editorial publication, organised around property, people, technology, travel, lifestyle and culture.</p></div></a>
+        <a class="fmt t-em" href="#platform"><img src="img/c-resort.webp" alt="" loading="lazy"><div><span class="tech">Format 02</span><h3>Regional supplements</h3><p>One territory at a time: its people, businesses and places, from Mauritius onward.</p></div></a>
+        <a class="fmt t-am" href="#platform"><img src="img/c-reader.webp" alt="" loading="lazy"><div><span class="tech">Format 03</span><h3>Digital editorial and film</h3><p>Articles, The Grapevine briefing and the MagCast, published between editions.</p></div></a>
+        <a class="fmt t-ru" href="#platform"><img src="img/event-2.webp" alt="" loading="lazy"><div><span class="tech">Format 04</span><h3>Network and experiences</h3><p>The Bluxe membership world and curated gatherings where readers, brands and ideas meet.</p></div></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad sapphire">
+    <div class="wrap room">
+      <a href="#magazine" class="edition cover-photo" style="text-decoration:none" aria-label="Go to the 2026 Annual reading room">
+        <img src="img/bluxe-century-annual-2026.jpg" alt="Bluxe Century 2026 annual magazine cover: Rolls-Royce in an African landscape, Unbound, Dynasty and Watch Authority" loading="lazy" width="1170" height="1654">
+      </a>
+      <div class="stack">
+        <p class="eyebrow">Now reading</p>
+        <h2>The 2026 Annual. <span class="g">Seventeen stories.</span></h2>
+        <p class="lede muted">From the second-hand watch market to cobalt, padel, private islands and the new patrons of culture. The full edition opens in its own reader.</p>
+        <div class="btns"><a class="btn solid" href="#magazine">Enter the reading room</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad ruby">
+    <div class="wrap">
+      <div class="split" style="margin-bottom:40px">
+        <div><p class="eyebrow">Track record</p><h2>Evidence, <span class="g">not adjectives.</span></h2></div>
+        <p class="lede muted" style="align-self:end">Bluxe repositioned Africa Fashion Week London for a new buyer audience. The case study reports these results.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><p class="num">+78%</p><p>Sponsorship and advertising revenue</p></div>
+        <div class="stat"><p class="num">+127%</p><p>Exhibitor sales</p></div>
+        <div class="stat"><p class="num">+205%</p><p>Event profit</p></div>
+      </div>
+      <p class="source">Source: Bluxe case study, Africa Fashion Week London. A past client result, not a forecast for advertisers. <a class="link" style="margin-left:8px" href="#record">See the case study</a></p>
+    </div>
+  </section>
+
+  <section class="pad amethyst">
+    <div class="wrap split">
+      <div><p class="eyebrow">Audience · 2024 snapshot</p><p class="num" style="font-size:clamp(72px,10vw,150px);color:var(--accent)">18,000+</p><p class="muted">subscribers across digital and physical distribution, as reported in the 2024 audience profile.</p></div>
+      <div class="stack" style="align-self:end">
+        <p class="statement">Founders, investors, executives and internationally active readers, from London and Lagos to New York and Dubai.</p>
+        <p><a class="link" href="#partners">Audience and partnerships</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad">
+    <div class="wrap">
+      <p class="eyebrow">Take part</p>
+      <h2 style="margin-bottom:40px">Three ways <span class="g">in.</span></h2>
+      <div class="routes">
+        <a class="route t-sa" href="#magazine"><img src="img/c-balloons.webp" alt="" loading="lazy"><p class="eyebrow" style="margin:0">Readers</p><h3>Read and watch</h3><p class="muted">The 2026 Annual, past editions, The Grapevine and the MagCast.</p><span class="link">Read the Magazine</span></a>
+        <a class="route t-em" href="#partners"><img src="img/partnership-doorway.webp" alt="" loading="lazy"><p class="eyebrow" style="margin:0">Brands and partners</p><h3>Build something relevant</h3><p class="muted">Advertising, editorial partnerships, supplements, film and experiences.</p><span class="link">Partner with Bluxe</span></a>
+        <a class="route t-am" href="#membership"><img src="img/members-contributors-event.webp" alt="" loading="lazy"><p class="eyebrow" style="margin:0">Members and contributors</p><h3>Join the conversation</h3><p class="muted">Contribute to the magazine, or apply to the wider Bluxe network.</p><span class="link">Membership and contact</span></a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ IDEA ============ -->
+<div class="view" data-view="idea">
+  <section class="phead" style="--ph:url(img/c-style.webp)">
+    <div class="wrap split rev">
+      <div>
+        <p class="eyebrow">The idea and heritage</p>
+        <h1>Intelligence. Ingenuity. <span class="g">Strategy.</span></h1>
+        <p class="lede muted">Three principles carried by one symbol, and the reason a magazine founded in London speaks to readers everywhere.</p>
+      </div>
+      <div style="display:grid;place-items:center"><img src="img/damedame-white.png" alt="The Dame-Dame symbol" width="393" height="393" style="width:min(320px,70%)"></div>
+    </div>
+  </section>
+
+  <section class="paper pad">
+    <div class="wrap split">
+      <div><p class="eyebrow">The symbol</p><h2>Dame-Dame</h2></div>
+      <div class="stack measure">
+        <p class="lede">Adinkra is a visual language of the Akan peoples of present-day Ghana and Côte d’Ivoire. Its symbols are printed on cloth, carved and cast, and each one carries a proverb or a principle.</p>
+        <p>Dame-Dame takes its name and form from a board game of the draughts family. A game won by reading the board, anticipating the other side and choosing the right move. Its meaning follows: intelligence, ingenuity and strategy.</p>
+        <p>Inside Bluxe, this inheritance has a name of its own: the wisdom of Akibuland, the ancient African source the brand draws on. Dame-Dame is its central mark. We reproduce it exactly as drawn, in black or white, and never redraw it.</p>
+        <div class="cols2" style="margin-top:32px">
+          <figure class="fig" style="margin:0;background:#fff;padding:28px;border:1px solid var(--rule)"><img src="img/damedame-black.png" alt="Dame-Dame symbol in black" width="393" height="393" style="width:120px;margin:auto"><figcaption style="text-align:center">On light grounds</figcaption></figure>
+          <figure class="fig" style="margin:0;background:#060506;padding:28px"><img src="img/damedame-white.png" alt="Dame-Dame symbol in white" width="393" height="393" style="width:120px;margin:auto"><figcaption style="text-align:center;color:#a39c90">On dark grounds</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad">
+    <div class="wrap">
+      <p class="eyebrow">From principle to page</p>
+      <h2 style="margin-bottom:48px">What the three words <span class="g">do.</span></h2>
+      <div class="cols3">
+        <div class="principle"><p class="k">Intelligence</p><h3>Read the board</h3><p class="muted">We report the forces behind wealth, culture and movement, and say why they matter. Sources sit beside the numbers.</p></div>
+        <div class="principle"><p class="k">Ingenuity</p><h3>Find the new move</h3><p class="muted">New formats when the old ones stop working: territory supplements, the MagCast, The Grapevine briefing.</p></div>
+        <div class="principle"><p class="k">Strategy</p><h3>Play for the long game</h3><p class="muted">Stories that lead somewhere: an introduction, a partnership, an event, a decision made with better information.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad emerald">
+    <div class="wrap split">
+      <div><p class="eyebrow">African in origin</p><h2>Universal <span class="g">in use.</span></h2></div>
+      <div class="stack measure">
+        <p class="lede">Draughts is played on the same board in Accra, Lisbon, Lagos and Kuala Lumpur. The rules do not ask where you are from.</p>
+        <p class="muted">Bluxe Century celebrates its African origin openly and writes for anyone who values thought, character, creativity and progress. Readers do not need to belong to a particular place, background or income bracket to use the ideas. They need curiosity.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad">
+    <div class="wrap split">
+      <div class="stack">
+        <p class="eyebrow">History</p>
+        <h2>From The Estate <span class="g">to Bluxe Century.</span></h2>
+        <p class="muted measure">The platform began as a property guide for the diaspora and grew, edition by edition, into an international media platform. The identity changed with it.</p>
+        <figure class="fig" style="margin:28px 0 0"><div class="ratio-32"><img src="img/estate-collage.webp" alt="A collage of imagery from the Estate era, including two Estate magazine covers" loading="lazy"></div><figcaption>The Estate era: property, travel and lifestyle for a diaspora readership.</figcaption></figure>
+        <div class="cols2" style="margin-top:24px">
+          <figure class="fig" style="margin:0"><div class="ratio-45"><img src="img/cover-2023-full.webp" alt="An early Bluxe Century cover, marked Powered by Estate" loading="lazy"></div><figcaption>An early Bluxe Century cover, still “Powered by Estate”.</figcaption></figure>
+          <figure class="fig" style="margin:0"><div class="ratio-45 today-mark"><img src="img/bluxe-century-social-logo.png" alt="White Dame-Dame symbol above the Bluxe wordmark on a black field" loading="lazy" width="875" height="875"></div><figcaption>Today: the Dame-Dame symbol with the Bluxe wordmark.</figcaption></figure>
+        </div>
+      </div>
+      <ol class="timeline" style="align-self:start">
+        <li><p class="when">The beginning</p><h3>The Estate Property Guide</h3><p class="muted">Founded to connect members of the diaspora worldwide and to challenge negative imagery of African people. Early issues featured Cape Verde, Kensington and investing in Africa, then Morocco’s Atlas Mountains and Deborah Meaden.</p></li>
+        <li><p class="when">A wider remit</p><h3>The Estate</h3><p class="muted">The third edition dropped the former title. Lifestyle interviews joined property, including a CBRE guide to buying in London.</p></li>
+        <li><p class="when">2018</p><h3>Nelson Mandela centenary edition</h3><p class="muted">A special edition with contributions from Graça Machel, Lonnie Bunch III, Freddie Achom and Ray Stowers.</p></li>
+        <li><p class="when">Events and community</p><h3>From page to room</h3><p class="muted">African art at the US Embassy, Savile Row gatherings, a Soneva Fushi conversation on sustainable luxury, early crypto at Gieves &amp; Hawkes, and the launch of Bluxe membership.</p></li>
+        <li><p class="when">2022</p><h3>Bluxe Century</h3><p class="muted">The Estate became Bluxe Century: an annual publication under the Dame-Dame mark, with a view across Africa, Asia, the Gulf and Europe.</p></li>
+        <li><p class="when">2023 – 2024</p><h3>Annuals and supplements</h3><p class="muted">The 2023 Annual, the Mauritius supplement and the 2024 Annual, The Year of Adventure.</p></li>
+        <li><p class="when">2026</p><h3>Vol. 07 and the MagCast</h3><p class="muted">A digital Annual of seventeen stories, The Grapevine briefing and the MagCast, a format for serious ideas in audio, text and image.</p></li>
+      </ol>
+    </div>
+  </section>
+</div>
+
+<!-- ============ PLATFORM ============ -->
+<div class="view" data-view="platform">
+  <section class="phead" style="--ph:url(img/c-balloons.webp)">
+    <div class="wrap">
+      <p class="eyebrow">The media platform</p>
+      <h1>Connected parts of <span class="g">one point of view.</span></h1>
+      <p class="lede muted">A magazine, territory supplements, digital editorial and film, and a network that meets in person. Here is what each one offers readers, and what it offers the partners it suits.</p>
+    </div>
+  </section>
+
+  <section class="pad">
+    <div class="wrap split">
+      <figure class="fig" style="margin:0"><div class="covers" style="grid-template-columns:1fr 1fr"><div class="cover"><div class="im"><img src="img/cover-2024.webp" alt="Bluxe Century 2024 Annual cover: Hydrogen, Fossil, Private Travel, Monarchy" loading="lazy"></div></div><div class="cover"><div class="im"><img src="img/cover-2023.webp" alt="Bluxe Century 2023 Annual cover: Africa, AlUla, Bali Beauty, Ferrari" loading="lazy"></div></div></div><figcaption>The 2024 and 2023 Annuals.</figcaption></figure>
+      <div class="stack">
+        <p class="eyebrow">01 · The Annual</p>
+        <h2>Bluxe Century <span class="g">magazine</span></h2>
+        <p class="lede">The main annual publication. Property, people, technology, travel, lifestyle and culture, read through a Bluxe lens.</p>
+        <div class="cols2 rule-top">
+          <div><p class="eyebrow">For readers</p><p class="muted">Long-form stories with room to explain a market, a place or a person, published as a digital edition you can read on any screen.</p></div>
+          <div><p class="eyebrow">For partners</p><p class="muted">Space for substantial storytelling: covers, editorial features, branded content and advertising within the subjects your audience already reads.</p></div>
+        </div>
+        <p><a class="link" href="#magazine">Open the reading room</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad sapphire">
+    <div class="wrap split rev">
+      <div class="stack">
+        <p class="eyebrow">02 · Regional supplements</p>
+        <h2>One territory <span class="g">at a time.</span></h2>
+        <p class="lede">Each supplement focuses on a single territory: its people, businesses, experiences and the reasons to pay attention.</p>
+        <div class="cols2 rule-top">
+          <div><p class="eyebrow">For readers</p><p class="muted">A considered introduction to a country, written for people deciding whether to visit, invest or build there.</p></div>
+          <div><p class="eyebrow">For partners</p><p class="muted">Market entry, destination promotion and locally relevant campaigns, built around a specific brief with a tourism body, investor or brand.</p></div>
+        </div>
+        <p class="small muted">The Mauritius supplement is published. Portugal, Japan, Malaysia, Rwanda, Bahrain and Hong Kong are designed and in development; each is open to a partnership conversation.</p>
+        <p><a class="link" href="https://simplebooklet.com/bluxecenturymauritiussupplement" target="_blank" rel="noopener">Read the Mauritius supplement ↗</a></p>
+      </div>
+      <div class="covers" style="grid-template-columns:repeat(3,1fr);align-self:center">
+        <a class="cover" href="https://simplebooklet.com/bluxecenturymauritiussupplement" target="_blank" rel="noopener"><div class="im"><img src="img/sup-mauritius.webp" alt="Mauritius Lifestyle and Business Supplement cover" loading="lazy"></div><span>Mauritius · Published</span></a>
+        <div class="cover"><div class="im"><img src="img/sup-portugal.webp" alt="Portugal supplement cover" loading="lazy"></div><span>Portugal · In development</span></div>
+        <div class="cover"><div class="im"><img src="img/sup-japan.webp" alt="Japan supplement cover" loading="lazy"></div><span>Japan · In development</span></div>
+        <div class="cover"><div class="im"><img src="img/sup-malaysia.webp" alt="Malaysia supplement cover" loading="lazy"></div><span>Malaysia · In development</span></div>
+        <div class="cover"><div class="im"><img src="img/sup-rwanda.webp" alt="Rwanda supplement cover" loading="lazy"></div><span>Rwanda · In development</span></div>
+        <div class="cover"><div class="im"><img src="img/sup-bahrain.webp" alt="Bahrain supplement cover" loading="lazy"></div><span>Bahrain · In development</span></div>
+        <div class="cover"><div class="im"><img src="img/sup-hong-kong.webp" alt="Hong Kong supplement cover" loading="lazy"></div><span>Hong Kong · In development</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad">
+    <div class="wrap split">
+      <figure class="fig" style="margin:0"><div class="ratio-45"><img src="img/c-reader.webp" alt="A reader with an open magazine" loading="lazy"></div></figure>
+      <div class="stack">
+        <p class="eyebrow">03 · Digital editorial and film</p>
+        <h2>Between <span class="g">editions.</span></h2>
+        <p class="lede">Articles, commentary, interviews and video keep the conversation moving through the year.</p>
+        <ul class="oldlist">
+          <li><span><b class="serif" style="font-size:21px">The Grapevine</b><br><span class="muted small">A monthly briefing on the forces behind wealth, culture and movement.</span></span></li>
+          <li><span><b class="serif" style="font-size:21px">The MagCast</b><br><span class="muted small">Selected stories can also be heard. Spoken editorial sits alongside written text and imagery, so you can choose the way that works for you.</span></span></li>
+          <li><span><b class="serif" style="font-size:21px">Editorial and film</b><br><span class="muted small">Commentary from the Editor-in-Chief and films from the Bluxe network.</span></span></li>
+        </ul>
+        <div class="cols2 rule-top">
+          <div><p class="eyebrow">For readers</p><p class="muted">Timely perspective in written, visual and, for selected stories, spoken formats. The MagCast listening option also supports readers with visual impairments.</p></div>
+          <div><p class="eyebrow">For partners</p><p class="muted">A campaign that lasts beyond one publication date: newsletter inclusion, digital placement and an optional MagCast feature.</p></div>
+        </div>
+        <p><a class="link" href="#archive">Browse the archive and film</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad ruby">
+    <div class="wrap split rev">
+      <div class="stack">
+        <p class="eyebrow">04 · Network and experiences</p>
+        <h2>Where readers <span class="g">meet.</span></h2>
+        <p class="lede">Bluxe Century sits within the wider Bluxe world: a curated membership network and gatherings that bring readers, founders and brands into the same room.</p>
+        <div class="cols2 rule-top">
+          <div><p class="eyebrow">For readers</p><p class="muted">Invitations, introductions and access through Bluxe membership, which is separate from reading the magazine and is by application.</p></div>
+          <div><p class="eyebrow">For partners</p><p class="muted">Hosted conversations, launches and VIP experiences, where appropriate, with the people a story was written for.</p></div>
+        </div>
+        <p><a class="link" href="#membership">How membership works</a></p>
+      </div>
+      <div class="cols2" style="gap:6px">
+        <div class="ratio-11 framed"><img src="img/event-2.webp" alt="Guests in conversation at a Bluxe property event" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
+        <div class="ratio-11 framed"><img src="img/event-3.webp" alt="A presentation to guests in front of a large city screen" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
+        <div class="ratio-11 framed"><img src="img/event-4.webp" alt="Guests around an illuminated architectural model" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
+        <div class="ratio-11 framed"><img src="img/afwl-audience.webp" alt="Audience at Africa Fashion Week London" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="paper pad">
+    <div class="wrap split">
+      <div><p class="eyebrow">Beyond placement</p><h2>Repackaging <span class="g">for relevance.</span></h2></div>
+      <div class="stack measure">
+        <p class="lede">Some brands need more than an advert. Bluxe Century can interpret a brand for an audience: understand what a partner offers, then express it in a language and setting its readers recognise.</p>
+        <p class="muted">That is the phrase the 2024 media pack uses. In practice it draws on brand strategy experience: audience, positioning and presentation, applied to a wider brief than media space alone. The Africa Fashion Week London repositioning is the clearest documented example.</p>
+        <p><a class="link" href="#record">See the track record</a></p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ MAGAZINE ============ -->
+<div class="view" data-view="magazine">
+  <section class="phead" style="--ph:url(img/c-villa.webp)">
+    <div class="wrap room">
+      <a href="https://bluxe-century.jaysam77.chatgpt.site/" target="_blank" rel="noopener" class="edition cover-photo" style="text-decoration:none" aria-label="Open the 2026 Annual Edition in a new tab">
+        <img src="img/bluxe-century-annual-2026.jpg" alt="Bluxe Century 2026 annual magazine cover: Rolls-Royce in an African landscape, Unbound, Dynasty and Watch Authority" loading="lazy" width="1170" height="1654">
+      </a>
+      <div class="stack">
+        <p class="eyebrow">The reading room</p>
+        <h1 style="font-size:clamp(44px,6.4vw,92px)">The 2026 <span class="g">Annual.</span></h1>
+        <p class="lede muted">Seventeen stories on the people, places and systems shaping what comes next. The edition opens full-screen in its own reader, built for phone, tablet and desktop. Selected stories have a MagCast listening companion.</p>
+        <div class="btns"><a class="btn solid" href="https://bluxe-century.jaysam77.chatgpt.site/" target="_blank" rel="noopener">Open the full edition ↗</a><a class="btn" href="#archive">Past editions</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="amethyst pad-s">
+    <div class="wrap split">
+      <div><p class="eyebrow">From the Editor-in-Chief</p></div>
+      <div class="stack">
+        <p class="statement wide">“Influence is not measured by how loudly we enter the room, but by what becomes possible because we were there.”</p>
+        <p class="muted">Joseph S. Farodoye, Founder, CEO and Editor-in-Chief · <i>The Century We Choose to Build</i></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad">
+    <div class="wrap">
+      <div class="split" style="margin-bottom:32px"><div><p class="eyebrow">In this edition</p><h2>Explore by <span class="g">subject.</span></h2></div><p class="muted" style="align-self:end">Every story opens in the 2026 edition reader. Read times are those shown in the edition. Look for the MagCast identifier on stories with a listening companion.</p></div>
+      <div class="chips" role="group" aria-label="Filter stories by subject" id="pillarChips">
+        <button class="chip" aria-pressed="true" data-p="all">All 17</button>
+        <button class="chip" aria-pressed="false" data-p="property">Property</button>
+        <button class="chip" aria-pressed="false" data-p="people">People</button>
+        <button class="chip" aria-pressed="false" data-p="technology">Technology</button>
+        <button class="chip" aria-pressed="false" data-p="travel">Travel</button>
+        <button class="chip" aria-pressed="false" data-p="lifestyle">Lifestyle</button>
+        <button class="chip" aria-pressed="false" data-p="culture">Culture</button>
+      </div>
+      <ol class="stories" id="stories"></ol>
+      <div class="magcast-access"><div><span class="magcast-mark">MagCast</span><h3>Stories to read or hear.</h3></div><div><p>Selected editorial is available in spoken form through MagCast, including stories for people who prefer listening or have a visual impairment. Written articles remain available for reading. The MagCast identifier appears only where a companion is available.</p><a class="link" href="https://www.bluxecentury.com/magcast" target="_blank" rel="noopener">Explore MagCast ↗</a></div></div>
+      <div class="btns" style="margin-top:32px"><a class="btn solid" href="https://bluxe-century.jaysam77.chatgpt.site/" target="_blank" rel="noopener">Read the 2026 edition ↗</a></div>
+    </div>
+  </section>
+
+  <section class="pad emerald">
+    <div class="wrap">
+      <p class="eyebrow">Previous editions</p>
+      <h2 style="margin-bottom:36px">Keep <span class="g">reading.</span></h2>
+      <div class="covers">
+        <a class="cover" href="https://publuu.com/flip-book/905681/1982424" target="_blank" rel="noopener"><div class="im"><img src="img/cover-2024.webp" alt="2024 Annual cover" loading="lazy"></div><b>The Year of Adventure</b><span>2024 Annual · Flipbook ↗</span></a>
+        <a class="cover" href="https://heyzine.com/flip-book/24678dbb19.html" target="_blank" rel="noopener"><div class="im"><img src="img/cover-2023.webp" alt="2023 Annual cover" loading="lazy"></div><b>The 2023 Annual</b><span>2023 Annual · Flipbook ↗</span></a>
+        <a class="cover" href="https://simplebooklet.com/bluxecenturymauritiussupplement" target="_blank" rel="noopener"><div class="im"><img src="img/sup-mauritius.webp" alt="Mauritius supplement cover" loading="lazy"></div><b>Mauritius</b><span>2023 Supplement · Booklet ↗</span></a>
+        <a class="cover" href="#archive"><div class="im"><img src="img/bluxe-full-archive.webp" alt="Bluxe Century publication archive collage" loading="lazy"></div><b>The full archive</b><span>Editions from The Estate onward</span></a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ ARCHIVE ============ -->
+<div class="view" data-view="archive">
+  <section class="phead" style="--ph:url(img/c-reader.webp)">
+    <div class="wrap">
+      <p class="eyebrow">Editorial archive and film</p>
+      <h1>A record of <span class="g">who was building what.</span></h1>
+      <p class="lede muted">Past editions, supplements, articles and films, each with its date where known, its format and where it opens.</p>
+    </div>
+  </section>
+
+  <section class="pad-s paper">
+    <div class="wrap">
+      <p class="eyebrow">Selected work</p>
+      <div class="cols3" style="margin-top:8px">
+        <a class="stack" style="text-decoration:none" href="https://www.bluxecentury.com/blog/designed-feeds-borrowed-beliefs" target="_blank" rel="noopener"><p class="tag">Article · Feb 2026</p><h3>Designed Feeds, Borrowed Beliefs</h3><p class="muted">Are we choosing what we see, or being quietly guided by systems designed to hold our attention?</p><span class="link">Read ↗</span></a>
+        <a class="stack" style="text-decoration:none" href="https://www.bluxecentury.com/blog/stop-the-looting" target="_blank" rel="noopener"><p class="tag">Article · Feb 2026</p><h3>Stop the Looting</h3><p class="muted">Museums, memory, and the quiet refusal to let go.</p><span class="link">Read ↗</span></a>
+        <a class="stack" style="text-decoration:none" href="https://youtu.be/l60bGgnQ_LU" target="_blank" rel="noopener"><p class="tag">MagCast · Film</p><h3>The Quiet Truth about Luxury Watches</h3><p class="muted">The market behind the object: price, provenance, liquidity and long-term value.</p><span class="link">Watch on YouTube ↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad">
+    <div class="wrap">
+      <label class="eyebrow" for="archSearch" style="display:block">Search the archive</label>
+      <input class="search" id="archSearch" type="search" placeholder="Try Africa, watches, Portugal…" autocomplete="off">
+      <div class="chips" role="group" aria-label="Filter archive by format" id="archChips">
+        <button class="chip" aria-pressed="true" data-f="all">Everything</button>
+        <button class="chip" aria-pressed="false" data-f="Edition">Editions</button>
+        <button class="chip" aria-pressed="false" data-f="Supplement">Supplements</button>
+        <button class="chip" aria-pressed="false" data-f="Article">Articles</button>
+        <button class="chip" aria-pressed="false" data-f="Film">Film and audio</button>
+      </div>
+      <p class="small muted" id="archCount" aria-live="polite" style="margin-bottom:14px"></p>
+      <ul class="arch" id="arch"></ul>
+      <p class="source">Films and flipbooks open on YouTube, Spotify, Publuu, Heyzine, Joomag and Simplebooklet in a new tab. Articles open on bluxecentury.com.</p>
+    </div>
+  </section>
+</div>
+
+<!-- ============ TRACK RECORD ============ -->
+<div class="view" data-view="record">
+  <section class="phead" style="--ph:url(img/afwl-audience.webp)">
+    <div class="wrap">
+      <p class="eyebrow">Track record</p>
+      <h1>What Bluxe has <span class="g">built.</span></h1>
+      <p class="lede muted">Documented work from the platform’s history. These are past results, reported by Bluxe, and they are not a forecast of current platform performance.</p>
+    </div>
+  </section>
+
+  <section class="pad">
+    <div class="wrap">
+      <div class="split" style="margin-bottom:48px">
+        <div class="stack"><p class="eyebrow">Case study</p><h2>Africa Fashion Week <span class="g">London.</span></h2><p class="tag dated">Historical client result</p></div>
+        <figure class="fig" style="margin:0"><div class="ratio-32"><img src="img/afwl-runway-yellow.webp" alt="Model wearing a multicoloured bodice and yellow train on the Africa Fashion Week London runway" loading="lazy"></div><figcaption>Africa Fashion Week London runway, from the Bluxe event archive.</figcaption></figure>
+      </div>
+      <div class="cols3" style="margin-bottom:56px">
+        <div class="principle"><p class="k">The challenge</p><h3>A new buyer audience</h3><p class="muted">Founded in 2011, AFWL had built a following as a platform for African fashion. The next step was commercial: reach buyers with spending power, and make the event pay for its ambition.</p></div>
+        <div class="principle"><p class="k">The approach</p><h3>Reposition, then rebuild the offer</h3><p class="muted">Bluxe repositioned the event for a new demographic and developed new revenue streams. The 2019 materials also document institutional participation in the wider event.</p></div>
+        <div class="principle"><p class="k">The formats</p><h3>Reasons to attend and to pay</h3><p class="muted">Corporate hospitality and a VIP area, a luxury and premium boutique area, a business consumer forum, a charity celebrity fashion show, an African food village and souk, and live music.</p></div>
+      </div>
+      <p class="eyebrow">Reported outcomes</p>
+      <div class="cs-figs">
+        <div><p class="num">78<sup>%</sup></p><p style="margin-top:12px">Increase in sponsorship and advertising revenue</p></div>
+        <div><p class="num">127<sup>%</sup></p><p style="margin-top:12px">Increase in exhibitor sales</p></div>
+        <div><p class="num">205<sup>%</sup></p><p style="margin-top:12px">Increase in event profit</p></div>
+      </div>
+      <p class="source">Figures as reported in the Bluxe Africa Fashion Week London case study. Historical results for one client; they show Bluxe’s approach to positioning, audience development and commercial execution, and are not a forecast for advertisers.</p>
+      <div class="afwl-gallery" aria-label="Africa Fashion Week London photo gallery">
+        <figure><img src="img/afwl-runway-black.webp" alt="Model in a black gown on the Africa Fashion Week London runway" loading="lazy" width="1600" height="1600"><figcaption>On the runway</figcaption></figure>
+        <figure><img src="img/afwl-runway-colour.webp" alt="Models in vibrant garments passing on the Africa Fashion Week London runway" loading="lazy" width="1600" height="1600"><figcaption>The collections</figcaption></figure>
+        <figure><img src="img/afwl-audience.webp" alt="Audience watching the Africa Fashion Week London show" loading="lazy" width="1600" height="1600"><figcaption>The audience</figcaption></figure>
+        <figure><img src="img/afwl-runway-gold.webp" alt="Model in a sculptural gold skirt on the Africa Fashion Week London runway" loading="lazy" width="1600" height="1599"><figcaption>Craft in motion</figcaption></figure>
+      </div>
+      <div class="afwl-evidence">
+        <div class="afwl-evidence-intro"><p class="eyebrow">From the 2019 event materials</p><h3>Institutional presence<br>in the room.</h3><p class="muted">These original presentation cards distinguish participation in the Business Consumer Forum from support for Africa Fashion Week London as a whole.</p></div>
+        <figure><img src="img/afwl-va-forum-2019.jpg" alt="2019 Africa Fashion Week London card identifying the Victoria and Albert Museum as a featured brand in the Business Consumer Forum" loading="lazy" width="1078" height="1081"><figcaption>V&A Museum · Featured brand, Business Consumer Forum · August 2019</figcaption></figure>
+        <figure><img src="img/afwl-mayor-support-2019.jpg" alt="2019 Africa Fashion Week London card identifying the Mayor of London office as a supporter of the event" loading="lazy" width="1078" height="1081"><figcaption>Mayor of London office · Supporter of AFWL 2019</figcaption></figure>
+      </div>
+      <div class="forum-section">
+        <div class="automotive-feature-head"><div><p class="eyebrow">In the room</p><h3>The Bluxe Fashion Business Forum.</h3></div><p class="muted">The event setting and guests, from the Bluxe archive.</p></div>
+        <div class="forum-gallery" aria-label="Bluxe Fashion Business Forum photographs">
+          <a href="img/afwl-business-forum-stage.webp" target="_blank" rel="noopener"><img src="img/afwl-business-forum-stage.webp" alt="Bluxe Fashion Business Forum stage with AFWL and Bluxe branding" loading="lazy" width="1536" height="1536"><span>Forum stage ↗</span></a>
+          <a href="img/afwl-business-forum-audience.webp" target="_blank" rel="noopener"><img src="img/afwl-business-forum-audience.webp" alt="Guests gathered at the Bluxe Fashion Business Forum" loading="lazy" width="1536" height="1152"><span>The audience ↗</span></a>
+          <a href="img/afwl-business-forum-candid.webp" target="_blank" rel="noopener"><img src="img/afwl-business-forum-candid.webp" alt="Guests talking at the Bluxe Fashion Business Forum" loading="lazy" width="1200" height="1600"><span>In conversation ↗</span></a>
+          <a href="img/afwl-business-forum-moments.webp" target="_blank" rel="noopener"><img src="img/afwl-business-forum-moments.webp" alt="Collage of runway, forum and guest moments from Africa Fashion Week London" loading="lazy" width="1656" height="1654"><span>Event moments ↗</span></a>
+          <a href="img/afwl-business-forum-group.webp" target="_blank" rel="noopener"><img src="img/afwl-business-forum-group.webp" alt="Group photograph of Bluxe Fashion Business Forum attendees" loading="lazy" width="1536" height="1152"><span>Together at the forum ↗</span></a>
+        </div>
+      </div>
+      <div class="split" style="margin-top:56px">
+        <figure class="fig" style="margin:0"><img src="img/afwl-formats.webp" alt="Formats delivered at AFWL: corporate hospitality VIP area, cultural immersive experience, African food village, luxury boutique area, business consumer forum, charity celebrity fashion show, African souk, fashion show and guest music performances" loading="lazy"><figcaption>The event formats, from the case study.</figcaption></figure>
+        <div class="stack">
+          <p class="eyebrow">AFWL’s own reported reach</p>
+          <ul class="listcols">
+            <li>70,000 attendees</li><li>50 countries represented</li><li>2,300 original designs showcased</li><li>34 million impressions online</li><li>14,000 businesses</li><li>13,000 catwalk hours</li>
+          </ul>
+          <p class="small muted">Cumulative event figures published by AFWL in its 2019 deck, reproduced in the case study. They describe the event, not Bluxe Century’s audience.</p>
+          <p><a class="link" data-doc="docs/bluxe-case-study-afwl.pdf" href="docs/bluxe-case-study-afwl.pdf" target="_blank" rel="noopener">Download the case study (PDF)</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad editorial-archive">
+    <div class="wrap">
+      <div class="split" style="margin-bottom:42px"><div><p class="eyebrow">From the magazine archive</p><h2>People and brands<br><span class="g">in conversation.</span></h2></div><p class="lede muted" style="align-self:end">A selection of Bluxe Century's published interviews and brand features. Open each page to see the original editorial treatment.</p></div>
+      <div class="editorial-grid">
+        <a href="img/editorial-chidi-ajufo.jpg" target="_blank" rel="noopener"><img src="img/editorial-chidi-ajufo.jpg" alt="Bluxe Century interview page with Chidi Ajufo, Breaking Stereotypes" loading="lazy" width="764" height="1075"><span class="editorial-kicker">People · Interview</span><h3>Chidi Ajufo</h3><p>Breaking Stereotypes: from sport to screen, in conversation with Joseph Farodoye.</p><span class="link">View archive page ↗</span></a>
+        <a href="img/editorial-bobby-verma-1fs.jpg" target="_blank" rel="noopener"><img src="img/editorial-bobby-verma-1fs.jpg" alt="Bluxe Century editorial page featuring Bobby Console Verma and 1fs Wealth" loading="lazy" width="747" height="1069"><span class="editorial-kicker">Business · Wealth intelligence</span><h3>Bobby Console Verma</h3><p>1fs Wealth and a view of digital intelligence for complex portfolios and family offices.</p><span class="link">View archive page ↗</span></a>
+        <a href="img/editorial-david-brown-automotive.jpg" target="_blank" rel="noopener"><img src="img/editorial-david-brown-automotive.jpg" alt="Bluxe editorial page featuring David Brown Automotive and a luxury car" loading="lazy" width="767" height="1081"><span class="editorial-kicker">Brands · Motoring</span><h3>David Brown Automotive</h3><p>British automotive craft, presented to Bluxe's international readership.</p><span class="link">View archive page ↗</span></a>
+      </div>
+      <div class="brand-feature-head"><p class="eyebrow">Featured brands</p><h3>Craft with a point of view.</h3><p class="muted">Fashion and fragrance from the Bluxe editorial archive.</p></div>
+      <div class="brand-feature-grid">
+        <article class="brand-feature"><div class="brand-feature-images"><img src="img/jesu-segun-london-loafer.webp" alt="Jesu Segun London black loafer with sculptural gold detail" loading="lazy"><img src="img/jesu-segun-london-heels.webp" alt="Jesu Segun London black floral heels" loading="lazy"></div><p class="editorial-kicker">Fashion · London</p><h3>Jesu Segun London</h3><p>Footwear where crafted details carry the signature. From a sculptural loafer to floral evening heels, the work speaks through material and form.</p><a class="link" href="img/jesu-segun-london-soles-archive.webp" target="_blank" rel="noopener">View archival detail ↗</a></article>
+        <article class="brand-feature"><div class="brand-feature-images"><img src="img/azzi-glasser-sequoia-wood.webp" alt="Sequoia Wood fragrance by The Perfumer’s Story by Azzi" loading="lazy"><img src="img/azzi-glasser-black-moss.webp" alt="Black Moss candle by The Perfumer’s Story by Azzi" loading="lazy"></div><p class="editorial-kicker">Fragrance · Profile</p><h3>Azzi Glasser &amp; The Perfumer’s Story</h3><p>Distinctive scent as a form of storytelling, seen through Sequoia Wood and Black Moss from The Perfumer’s Story by Azzi.</p></article>
+      </div>
+      <div class="automotive-feature">
+        <div class="automotive-feature-head"><div><p class="eyebrow">Inside the feature</p><h3>Speedback Silverstone Edition.</h3></div><p class="muted">The Jet Age, performance and exterior design across three original magazine spreads.</p></div>
+        <div class="automotive-spreads">
+          <a href="img/editorial-david-brown-jet-age.jpg" target="_blank" rel="noopener"><img src="img/editorial-david-brown-jet-age.jpg" alt="David Brown Automotive magazine spread, Journey Into the Jet Age" loading="lazy" width="1600" height="746"><span>01 / The Jet Age ↗</span></a>
+          <a href="img/editorial-david-brown-performance.jpg" target="_blank" rel="noopener"><img src="img/editorial-david-brown-performance.jpg" alt="David Brown Automotive Speedback Silverstone Edition performance spread" loading="lazy" width="1600" height="707"><span>02 / Performance ↗</span></a>
+          <a href="img/editorial-david-brown-design.jpg" target="_blank" rel="noopener"><img src="img/editorial-david-brown-design.jpg" alt="David Brown Automotive Speedback Silverstone Edition exterior design spread" loading="lazy" width="1600" height="701"><span>03 / Exterior design ↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ruby pad">
+    <div class="wrap">
+      <p class="eyebrow">Gatherings</p>
+      <h2 style="margin-bottom:36px">Events Bluxe has <span class="g">hosted and shaped.</span></h2>
+      <ul class="listcols" style="columns:3 220px">
+        <li>An Ambassador’s Journey</li><li>Asian Cuisine at its Finest</li><li>Nelson Mandela Freedom 100 Charity Dinner</li><li>Eco Luxury in the Maldives</li><li>US Embassy EPG Art Launch</li><li>Understated in London</li><li>The Coronation</li><li>Savile Row’s Finest</li><li>Eat Yourself Sexy London</li><li>Africa Fashion Week London</li><li>Cryptocurrency Impacting the World</li><li>TLG EPG Garden Party</li>
+      </ul>
+      <p class="source">As listed on bluxecentury.com/events.</p>
+    </div>
+  </section>
+
+  <section class="pad">
+    <div class="wrap">
+      <p class="eyebrow">In partners’ words</p>
+      <h2 style="margin-bottom:40px">What clients <span class="g">said.</span></h2>
+      <div class="cols2">
+        <div class="quote"><q>We are happy to be one of the first repeat advertisers in Bluxe Century. We have found working with the team to develop new ways to market our development rewarding. In short, presentation and unique access offered by Bluxe Century sets the bar very high.</q><p class="who">Chris Bovey · The Resort Group</p></div>
+        <div class="quote"><q>We found Bluxe Century to be a highly effective avenue to gain traction in the Kenyan market and our subsequent event was a success.</q><p class="who">Giles Beswick · Select Property Group</p></div>
+        <div class="quote"><q>The Bluxe Century team added so much to our VIP event at the US Embassy London, which led to one of the best events we have facilitated. We will be working with the Bluxe Century team again in the future.</q><p class="who">Denise Harris · US Embassy London</p></div>
+        <div class="quote"><q>The Bluxe Century magazine is the most effective platform we have utilised, on the market for gaining access to high net worth diaspora clients.</q><p class="who">Paul Bailey · Vitamix</p></div>
+      </div>
+      <p class="source">Testimonials as published in the 2024 Bluxe Century sales pack.</p>
+      <div style="margin-top:56px">
+        <p class="eyebrow">Clients and partners include</p>
+        <div class="clients-plate"><img src="img/clients.webp" alt="Client logos: US Embassy, HEIQ, Berkeley Group, Bonhams, Eko Atlantic, Ferrari, L’Amandier, NexQuest, St Edward, Hackett London, Vitamix, EKO, Select Property Group, Soneva, TLG Capital, MJ Hudson, The Resort Group" loading="lazy" style="width:100%;max-width:1100px;margin:auto"></div>
+        <p class="source">As listed in the 2024 sales pack.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ PARTNERS ============ -->
+<div class="view" data-view="partners">
+  <section class="phead" style="--ph:url(img/c-resort.webp)">
+    <div class="wrap split rev">
+      <div>
+        <p class="eyebrow">Audience and partnerships</p>
+        <h1>Relevance, <span class="g">with context.</span></h1>
+        <p class="lede muted">Bluxe Century introduces a brand through a story, a territory, a film or a room of the right people. The value is relevance, trust and attention that lasts longer than a scroll.</p>
+        <div class="btns" style="margin-top:32px"><a class="btn solid" href="#brief">Request a proposal</a><a class="btn" href="#downloads" id="toDownloads">Download the packs</a></div>
+      </div>
+      <figure class="fig" style="margin:0;align-self:center"><div class="ratio-11 framed"><img src="img/gold.webp" alt="Gold nuggets on dark soil beside a trowel" loading="lazy"></div></figure>
+    </div>
+  </section>
+
+  <section class="pad">
+    <div class="wrap">
+      <p class="eyebrow">Ways to work together</p>
+      <h2 style="margin-bottom:44px">Three kinds <span class="g">of partner.</span></h2>
+      <div class="ptypes">
+        <div class="ptype"><p class="eyebrow" style="margin:0">Advertiser</p><h3>Be seen in the right company</h3><p class="muted">Place a product or service in a publication whose subjects and readers are relevant to it.</p><ul><li>Cover and inside-cover positions</li><li>Single pages and double-page spreads</li><li>Placement in a regional supplement</li><li>Digital placement and newsletter inclusion</li></ul></div>
+        <div class="ptype"><p class="eyebrow" style="margin:0">Brand</p><h3>Have your story told well</h3><p class="muted">For brands whose quality needs explanation: property, hospitality, travel, design, technology, wealth services and considered lifestyle products.</p><ul><li>Editorial features, 4 to 8 page equivalent</li><li>Branded content and visual presentation</li><li>Film and an optional MagCast feature</li><li>Social amplification</li></ul></div>
+        <div class="ptype"><p class="eyebrow" style="margin:0">Strategic partner</p><h3>Build something together</h3><p class="muted">A broader relationship developed around a specific brief, rather than a fixed package.</p><ul><li>A regional supplement or destination narrative</li><li>An editorial series</li><li>An event or VIP experience</li><li>Distribution or a joint initiative</li></ul></div>
+      </div>
+      <p class="source">Formats are developed around each brief. Availability, scale and rates are confirmed in a current proposal.</p>
+    </div>
+  </section>
+
+  <section class="emerald pad">
+    <div class="wrap">
+      <div class="split" style="margin-bottom:44px">
+        <div class="stack"><p class="eyebrow">The audience</p><h2>A 2024 <span class="g">snapshot.</span></h2><p class="tag dated">2024 audience profile · not current performance</p></div>
+        <p class="lede" style="align-self:end">More than 18,000 subscribers across digital and physical distribution. Founders, investors, executives, entrepreneurs and diplomats, with distribution reaching family offices, embassies and private equity.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><p class="num">87%</p><p>would pay more for a superior experience with a personal touch</p></div>
+        <div class="stat"><p class="num">91%</p><p>prefer items that are exclusive, bespoke or crafted by artisan hands</p></div>
+        <div class="stat"><p class="num">63%</p><p>own an investment property</p></div>
+      </div>
+      <div class="cols2" style="margin-top:56px">
+        <div>
+          <p class="eyebrow">Top cities</p>
+          <div class="bars" id="cityBars"></div>
+        </div>
+        <div>
+          <p class="eyebrow">Heritage of readers</p>
+          <div class="bars" id="mixBars"></div>
+          <p class="small muted" style="margin-top:18px">African-rooted, and read well beyond any single identity or territory.</p>
+        </div>
+      </div>
+      <p class="source">Source: Bluxe Century audience profile, 2024. Survey-based figures as reported; methodology is not stated in the document. The profile’s city shares sum to 94.1% as published. Subscribers, readership and reach are different measures and are not combined here. Current figures are supplied with every proposal.</p>
+    </div>
+  </section>
+
+  <section class="pad" id="downloads">
+    <div class="wrap">
+      <p class="eyebrow">Downloads</p>
+      <h2 style="margin-bottom:36px">The <span class="g">packs.</span></h2>
+      <div class="docs">
+        <a class="doc" data-doc="docs/bluxe-century-audience-profile-2024.pdf" href="docs/bluxe-century-audience-profile-2024.pdf" target="_blank" rel="noopener"><p class="tag dated">2024</p><h3>Audience profile</h3><p class="muted small">Demographics, cities, income bands and reader attitudes. 8 pages, PDF, 2 MB.</p><span class="go">Open PDF ↗</span></a>
+        <a class="doc" data-doc="docs/bluxe-century-sales-pack-2024.pdf" href="docs/bluxe-century-sales-pack-2024.pdf" target="_blank" rel="noopener"><p class="tag dated">2024</p><h3>Sales pack</h3><p class="muted small">The Annual, supplements, approach, testimonials and 2024 specifications. Its 2024 rate card is historical; ask for current rates. 11 pages, PDF, 3 MB.</p><span class="go">Open PDF ↗</span></a>
+        <a class="doc" data-doc="docs/bluxe-case-study-afwl.pdf" href="docs/bluxe-case-study-afwl.pdf" target="_blank" rel="noopener"><p class="tag dated">Case study</p><h3>Africa Fashion Week London</h3><p class="muted small">The repositioning, the event formats and AFWL’s reported reach. 5 pages, PDF, 1 MB.</p><span class="go">Open PDF ↗</span></a>
+      </div>
+      <details style="margin-top:40px">
+        <summary class="eyebrow" style="cursor:pointer;margin:0">Archive: older media packs and rate cards</summary>
+        <ul class="oldlist" style="margin-top:16px">
+          <li><span>Bluxe Century Magazine Sales Pack and rate card, as hosted on bluxecentury.com</span><a class="link" href="https://uploads.strikinglycdn.com/files/61618c5b-bd04-4494-a443-309a87f33ebc/Bluxe%20Century%20Magazine%20Sales%20Pack.pdf" target="_blank" rel="noopener">Open ↗</a></li>
+          <li><span>Bluxe Century media pack (Canva)</span><a class="link" href="https://www.canva.com/design/DAF2-E-coac/iJDvCFvlTNg-Elgx0lEICg/view" target="_blank" rel="noopener">Open ↗</a></li>
+        </ul>
+        <p class="source">Historical documents, kept for reference. Their prices and audience figures are not current.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="pad sapphire" id="brief">
+    <div class="wrap split">
+      <div class="stack">
+        <p class="eyebrow">Request a proposal</p>
+        <h2>Start a serious <span class="g">conversation.</span></h2>
+        <p class="muted measure">Tell us what you want to achieve. We reply with current audience figures, relevant formats and rates for your brief. Your answers become an email you send yourself, so nothing is stored here.</p>
+        <div class="contact" style="padding:0;background:transparent"><p class="eyebrow" style="margin:0">Partnerships</p><div class="addr"><code>info@bluxecentury.com</code><button class="copy" data-copy="info@bluxecentury.com">Copy</button></div></div>
+      </div>
+      <form class="form" id="briefForm" novalidate>
+        <fieldset class="field"><legend>I am enquiring as</legend>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="ptype" id="pt-adv" value="Advertiser" checked><span>An advertiser</span></label>
+            <label class="opt"><input type="radio" name="ptype" id="pt-brand" value="Brand"><span>A brand</span></label>
+            <label class="opt"><input type="radio" name="ptype" id="pt-strat" value="Strategic partner"><span>A strategic partner</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="field"><legend>Interested in</legend>
+          <div class="opts">
+            <label class="opt"><input type="checkbox" name="fmt" id="f-annual" value="The Annual"><span>The Annual</span></label>
+            <label class="opt"><input type="checkbox" name="fmt" id="f-sup" value="A regional supplement"><span>A regional supplement</span></label>
+            <label class="opt"><input type="checkbox" name="fmt" id="f-digital" value="Digital editorial and The Grapevine"><span>Digital and The Grapevine</span></label>
+            <label class="opt"><input type="checkbox" name="fmt" id="f-film" value="Film and the MagCast"><span>Film and MagCast</span></label>
+            <label class="opt"><input type="checkbox" name="fmt" id="f-event" value="An event or experience"><span>Events</span></label>
+            <label class="opt"><input type="checkbox" name="fmt" id="f-strategy" value="Brand strategy and positioning"><span>Brand strategy</span></label>
+          </div>
+        </fieldset>
+        <div class="two">
+          <div class="field"><label for="b-name">Your name</label><input id="b-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="b-org">Organisation</label><input id="b-org" name="org" autocomplete="organization" required></div>
+        </div>
+        <div class="two">
+          <div class="field"><label for="b-email">Email</label><input id="b-email" name="email" type="email" autocomplete="email" inputmode="email" required></div>
+          <div class="field"><label for="b-market">Markets of interest</label><input id="b-market" name="market" placeholder="e.g. UK, Nigeria, UAE, Portugal"></div>
+        </div>
+        <div class="field"><label for="b-goal">What would success look like?</label><textarea id="b-goal" name="goal" maxlength="800" placeholder="Launching a development to international buyers in Q2, for example."></textarea></div>
+        <div class="field"><label for="b-time">Timing</label><select id="b-time" name="time"><option>Within 3 months</option><option>3 to 6 months</option><option>6 to 12 months</option><option>Exploring for now</option></select></div>
+        <p class="err" id="briefErr" hidden></p>
+        <div class="btns"><button class="btn solid" type="submit">Prepare my enquiry</button></div>
+        <div class="out" id="briefOut" hidden>
+          <p class="eyebrow" style="margin:0">Your enquiry is ready</p>
+          <pre id="briefText"></pre>
+          <div class="btns"><button type="button" class="btn solid" id="briefCopy">Copy text</button><a class="btn" id="briefMail" href="#">Open in email</a></div>
+          <p class="small muted" style="margin-top:12px">Send it to info@bluxecentury.com. If your email app does not open, copy the text and paste it into a new message.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+</div>
+
+<!-- ============ MEMBERSHIP & CONTACT ============ -->
+<div class="view" data-view="membership">
+  <section class="phead" style="--ph:url(img/c-friends.webp)">
+    <div class="wrap">
+      <p class="eyebrow">Membership and contact</p>
+      <h1>Read freely. <span class="g">Join by invitation.</span></h1>
+      <p class="lede muted">The magazine, The Grapevine and the MagCast are open to every reader. Bluxe membership is a separate, curated network, and joining it is by application.</p>
+    </div>
+  </section>
+
+  <section class="pad">
+    <div class="wrap split">
+      <figure class="fig" style="margin:0"><div class="ratio-45"><img src="img/c-friends.webp" alt="Friends together in the sun" loading="lazy"></div></figure>
+      <div class="stack">
+        <p class="eyebrow">The wider Bluxe world</p>
+        <h2>Bluxe <span class="g">membership.</span></h2>
+        <p class="lede">A vetted community of decision-makers, with curated introductions, experiences and brand partners. It is not a public club and not required to read Bluxe Century.</p>
+        <ol class="steps" style="margin-top:12px">
+          <li><div><h3 style="font-size:24px">Request</h3><p class="muted">Submit an application on bluxe.eu.</p></div></li>
+          <li><div><h3 style="font-size:24px">Review</h3><p class="muted">The curation team reviews each request.</p></div></li>
+          <li><div><h3 style="font-size:24px">Conversation</h3><p class="muted">Where there is alignment, you are invited to a private discovery conversation.</p></div></li>
+        </ol>
+        <div class="btns" style="margin-top:12px"><a class="btn solid" href="https://www.bluxe.eu/application" target="_blank" rel="noopener">Apply on bluxe.eu ↗</a><a class="btn" href="https://www.bluxe.eu" target="_blank" rel="noopener">About Bluxe ↗</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad member-archive">
+    <div class="wrap">
+      <div class="split member-archive-intro"><div><p class="eyebrow">From the membership archive</p><h2>People in the <span class="g">Bluxe circle.</span></h2></div><p class="lede muted">A glimpse of card holders photographed with Bluxe over the years. These images document the community at the time they were taken.</p></div>
+      <div class="member-gallery">
+        <figure><img src="img/member-sugarhill-gang.webp" alt="Sugarhill Gang members with a Bluxe card" loading="lazy"><figcaption><strong>Sugarhill Gang</strong><span>Music legends</span></figcaption></figure>
+        <figure><img src="img/member-diambi.webp" alt="Diambi of Congo with a Bluxe card" loading="lazy"><figcaption><strong>Diambi of Congo</strong><span>Member archive</span></figcaption></figure>
+        <figure><img src="img/member-richard-blackwood.webp" alt="Richard Blackwood with a Bluxe card" loading="lazy"><figcaption><strong>Richard Blackwood</strong><span>Actor and comedian</span></figcaption></figure>
+        <figure><img src="img/member-philip-telesford.webp" alt="Philip Telesford with a Bluxe card" loading="lazy"><figcaption><strong>Philip Telesford</strong><span>Head tailor, Hackett</span></figcaption></figure>
+        <figure><img src="img/member-scarlet-wilson.webp" alt="Scarlet Wilson with a Bluxe card" loading="lazy"><figcaption><strong>Scarlet Wilson</strong><span>Actress</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="emerald pad">
+    <div class="wrap split">
+      <div class="stack"><p class="eyebrow">Stay informed</p><h2>The <span class="g">Grapevine.</span></h2></div>
+      <div class="stack measure">
+        <p class="lede">Our monthly briefing on the forces behind wealth, culture and movement. Read it on LinkedIn; selected editions are also available to hear through MagCast.</p>
+        <div class="btns"><a class="btn solid" href="https://www.linkedin.com/newsletters/grapevine-7147244862445195264/" target="_blank" rel="noopener">Subscribe on LinkedIn ↗</a><a class="btn" href="https://www.bluxecentury.com/magcast" target="_blank" rel="noopener">The MagCast ↗</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
+      <h2 style="margin-bottom:36px">Write <span class="g">to us.</span></h2>
+      <div class="contacts">
+        <div class="contact"><p class="eyebrow" style="margin:0">Editorial contributions</p><p class="muted">Pitch a story, an interview or a territory. Include a short outline and links to published work.</p><div class="addr"><code>info@bluxecentury.com</code><button class="copy" data-copy="info@bluxecentury.com">Copy</button></div></div>
+        <div class="contact"><p class="eyebrow" style="margin:0">Brand partnerships</p><p class="muted">Advertising, editorial partnerships, supplements and events. Or <a class="link" href="#brief" style="font-size:12px">prepare a proposal request</a>.</p><div class="addr"><code>info@bluxecentury.com</code><button class="copy" data-copy="info@bluxecentury.com">Copy</button></div></div>
+        <div class="contact"><p class="eyebrow" style="margin:0">Bluxe Private</p><p class="muted">Founders, family offices, investors and partners aligned with the Bluxe network.</p><div class="addr"><code>private@bluxeglobal.com</code><button class="copy" data-copy="private@bluxeglobal.com">Copy</button></div></div>
+        <div class="contact"><p class="eyebrow" style="margin:0">General</p><p class="muted">Bluxe Global Limited, 7 Bell Yard, London WC2A 2JR, England.</p><div class="addr"><code>info@bluxecentury.com</code><button class="copy" data-copy="info@bluxecentury.com">Copy</button></div></div>
+      </div>
+      <p class="source">Instagram <a class="link" style="font-size:12px" href="https://www.instagram.com/bluxe_century" target="_blank" rel="noopener">@bluxe_century ↗</a></p>
+    </div>
+  </section>
+</div>
+
+<div class="weave"></div>
+<section class="proverb pad amethyst">
+  <div class="wrap">
+    <div class="cast-sm" aria-hidden="true"></div>
+    <blockquote>Until the lion learns to write, every story will glorify the hunter.</blockquote>
+    <cite>African proverb · Bluxe Century exists so the lion writes</cite>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="stack">
+        <img src="img/wordmark-century.png" alt="Bluxe Century" width="829" height="198" style="width:200px">
+        <p class="muted small" style="max-width:34ch">Rooted in wisdom. Open to the world. Published by Bluxe Global Limited, London.</p>
+      </div>
+      <div><h4>Read</h4><ul><li><a href="#magazine">The 2026 Annual</a></li><li><a href="#archive">Archive and film</a></li><li><a href="https://www.linkedin.com/newsletters/grapevine-7147244862445195264/" target="_blank" rel="noopener">The Grapevine ↗</a></li><li><a href="https://www.bluxecentury.com/magcast" target="_blank" rel="noopener">The MagCast ↗</a></li></ul></div>
+      <div><h4>Platform</h4><ul><li><a href="#idea">The idea and heritage</a></li><li><a href="#platform">Formats</a></li><li><a href="#record">Track record</a></li><li><a href="#partners">Audience and partnerships</a></li></ul></div>
+      <div><h4>Connect</h4><ul><li><a href="#brief">Request a proposal</a></li><li><a href="#membership">Membership and contact</a></li><li><a href="https://www.bluxe.eu" target="_blank" rel="noopener">bluxe.eu ↗</a></li><li><a href="https://www.instagram.com/bluxe_century" target="_blank" rel="noopener">Instagram ↗</a></li></ul></div>
+    </div>
+    <div class="legal"><span>© 2026 Bluxe Century · Bluxe Global Limited · 7 Bell Yard, London WC2A 2JR</span><span>info@bluxecentury.com</span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* ---------- bezel ticks ---------- */
+  (function(){var g=document.getElementById('ticks');if(!g)return;var h='';for(var i=0;i<120;i++){var a=i*3*Math.PI/180,l=(i%10===0)?14:(i%5===0?9:5),r1=188,r2=r1-l;h+='<line x1="'+(200+r1*Math.sin(a)).toFixed(2)+'" y1="'+(200-r1*Math.cos(a)).toFixed(2)+'" x2="'+(200+r2*Math.sin(a)).toFixed(2)+'" y2="'+(200-r2*Math.cos(a)).toFixed(2)+'" stroke="url(#brz)" stroke-width="'+(i%10===0?2:1)+'"/>';}g.innerHTML=h;})();
+
+  /* ---------- data ---------- */
+  var ED='https://bluxe-century.jaysam77.chatgpt.site/';
+  var stories=[
+    [1,'people','From the Editor-in-Chief','The Century We Choose to Build','Ownership, cultural confidence and the purpose of Bluxe Century.',6],
+    [2,'people','Unbound','Africa Beyond Limits','A new generation is moving beyond inherited definitions of power, culture and possibility.',8],
+    [3,'people','The Century Interview','Tiffanee Marie Lim','A legacy where innovation meets compassion. First interviewed in 2024; this is the conversation two years on.',12],
+    [4,'property','Addresses of Consequence','Addresses of Consequence','A considered look at ownership, place and the properties that carry meaning beyond price.',11],
+    [5,'travel','Century Escapes · Balearics','Tagomago: The Island That Refuses to Multiply','Just off Ibiza, privacy becomes geography, and true scarcity becomes the ultimate luxury.',10],
+    [6,'property','Borderless Ownership','The Diaspora Buyer’s Second Address','Why the next property decision is less about a postcode and more about optionality, belonging and intelligent access.',9],
+    [7,'lifestyle','Watch Authority','The Power Behind Resale','The second-hand watch market is where informed collectors study price, provenance, liquidity and long-term value.',10,'https://www.bluxecentury.com/vol-1'],
+    [8,'travel','A-List by Bluxe · The Algarve','The Places Worth Knowing','The Algarve’s restaurants, beaches, wellness, sport and culture, through one trusted local lens. In partnership with A-List by Bluxe.',10],
+    [9,'technology','Data Infrastructure','Intelligence in Motion','Data, digital infrastructure and the quiet systems changing how influence moves.',7],
+    [10,'technology','Private Intelligence','The Private Office Learns to Think','AI is moving from assistant to infrastructure, but judgement, discretion and accountability remain human work.',11],
+    [11,'culture','Dame-Dame Heritage','Bluxe: Where Alignment Begins','Movement without noise. Progress without compromise. A future shaped not by excess, but by alignment.',6],
+    [12,'culture','Cultural Capital','The New Patrons','Black founders moving beyond visibility to fund cultural institutions.',10],
+    [13,'lifestyle','The Padel Century · Special Report','The Court That Became a World','From Enrique Corcuera’s walled court in Acapulco, 1969, to 58,300 courts worldwide in 2025.',14],
+    [14,'lifestyle','The New Luxury','Luxury After Logos','The affluent consumer is moving from recognition to resonance, from visible price to private meaning.',8],
+    [15,'property','Dynasty · Generational Wealth','Capital With a Memory','How wealth becomes legacy through context, character and purpose.',12],
+    [16,'technology','The Grapevine','Designed Feeds, Borrowed Beliefs','Are we choosing what we see, or being quietly guided by systems designed to hold our attention?',13,'https://www.bluxecentury.com/vol-1'],
+    [17,'technology','Unbound · Strategic Minerals','Blue Gold: Cobalt','The volatile metal inside modern mobility, aerospace and the battery economy. The price fell. Its strategic importance did not.',12]
+  ];
+  var B='https://www.bluxecentury.com/blog/';
+  var arch=[
+    {f:'Edition',t:'Bluxe Century 2026 Annual Edition',d:'2026',k:'Vol. 07',p:'Seventeen stories across property, people, technology, travel, lifestyle and culture.',u:ED,img:'img/bluxe-century-annual-2026.jpg',go:'Open the digital edition'},
+    {f:'Edition',t:'The Year of Adventure',d:'Fall 2024',k:'2024 Annual',p:'Wealth management, private flight, the monarchy’s evolving role and digital defiance.',u:'https://publuu.com/flip-book/905681/1982424',img:'img/cover-2024.webp',go:'Open the flipbook'},
+    {f:'Edition',t:'The 2023 Annual',d:'2023',k:'2023 Annual',p:'Africa, AlUla, Bali beauty and Ferrari: luxury travel, AI, emerging markets and sustainable luxury.',u:'https://heyzine.com/flip-book/24678dbb19.html',img:'img/cover-2023.webp',go:'Open the flipbook'},
+    {f:'Edition',t:'The Estate',d:'The Estate era',k:'Third edition',p:'The guide re-born as The Estate: lifestyle interviews, a CBRE guide to buying in London, Vanessa Gounden.',u:'https://newsstand.joomag.com/en/the-estate-volume-3/0309215001511285557',img:'img/estate-collage.webp',go:'Read on Joomag'},
+    {f:'Edition',t:'The Estate Property Guide: Morocco',d:'The Estate era',k:'Property guide',p:'Luxury in Morocco’s Atlas Mountains, the Queen of Green, and Deborah Meaden’s love affair with Africa.',u:'https://newsstand.joomag.com/en/the-estate-property-guide-estate-property-guide-volume-2/0076825001513321858',txt:'The Estate Property Guide',go:'Read on Joomag'},
+    {f:'Edition',t:'The Estate Property Guide: Cape Verde',d:'The Estate era',k:'Property guide',p:'Cape Verde, the “Miami of Africa”; St Edward in Kensington; the secret of investing in Africa.',u:'https://newsstand.joomag.com/en/the-estate-property-guide-estate-property-guide-volume-1/0002299001493971355',txt:'The Estate Property Guide',go:'Read on Joomag'},
+    {f:'Supplement',t:'Mauritius',d:'2023',k:'Lifestyle and Business Supplement',p:'The island’s leading business and lifestyle brands: security, wealth management and a considered way of living.',u:'https://simplebooklet.com/bluxecenturymauritiussupplement',img:'img/sup-mauritius.webp',go:'Open the booklet'},
+    {f:'Article',t:'The Second-Hand Watch Market: Where Luxury Meets Logic',d:'11 Feb 2026',k:'Joseph Farodoye',p:'Why the pre-owned market has moved from compromise to informed acquisition.',u:B+'the-second-hand-watch-market-where-luxury-meets-logic',mag:'https://www.bluxecentury.com/vol-1'},
+    {f:'Article',t:'Designed Feeds, Borrowed Beliefs',d:'6 Feb 2026',k:'The Grapevine',p:'Are we choosing what we see, or being quietly guided?',u:B+'designed-feeds-borrowed-beliefs',mag:'https://www.bluxecentury.com/vol-1'},
+    {f:'Article',t:'The 15% Return Question',d:'6 Feb 2026',k:'Investment',p:'Three investors. Thirty-six months. No myths.',u:B+'the-15-return-question'},
+    {f:'Article',t:'Stop the Looting',d:'2 Feb 2026',k:'Culture',p:'Museums, memory, and the quiet refusal to let go.',u:B+'stop-the-looting'},
+    {f:'Article',t:'The Grapevine: Summer Edition',d:'2 Aug 2025',k:'The Grapevine',p:'From escapism to evolution.',u:B+'the-grapevine-summer-edition'},
+    {f:'Article',t:'The Grapevine: May Edition',d:'2025',k:'The Grapevine',p:'From DeFi takeovers in Africa to the quiet rise of a new stablecoin.',u:B+'the-grapevine-may-edition'},
+    {f:'Article',t:'The Grapevine: April Edition',d:'2025',k:'The Grapevine',p:'In a colourful world, we attract our tribe.',u:B+'the-grapevine-april-edition'},
+    {f:'Article',t:'China Leading the Nuclear Race',d:'Date not shown',k:'Technology',p:'The world’s first operational thorium reactor.',u:B+'china-leading-the-nuclear-race'},
+    {f:'Article',t:'A Seismic Shift Across Africa',d:'Date not shown',k:'Africa',p:'Some revolutions don’t need guns. They need courage.',u:B+'a-seismic-shift-across-africa'},
+    {f:'Article',t:'The Royal Attraction',d:'Date not shown',k:'Property',p:'Why the British royals are moving to the Algarve.',u:B+'the-royal-attraction'},
+    {f:'Article',t:'Set Sail and Dive In',d:'2024',k:'Edition launch',p:'An introduction to the Fall 2024 edition of Bluxe Century.',u:B+'set-sail-and-dive-in'},
+    {f:'Film',t:'The Quiet Truth about Luxury Watches',d:'2026',k:'MagCast',p:'The film companion to The Power Behind Resale.',u:'https://youtu.be/l60bGgnQ_LU',img:'img/c-rings.webp',go:'Watch on YouTube',play:true},
+    {f:'Film',t:'The Illusion of Choice',d:'2026',k:'MagCast',p:'The film companion to Designed Feeds, Borrowed Beliefs.',u:'https://youtu.be/zq4kLeqTmxM',img:'img/c-abaya.webp',go:'Watch on YouTube',play:true},
+    {f:'Film',t:'How to Use the MagCast',d:'2026',k:'MagCast',p:'New to the MagCast? Start here.',u:'https://youtu.be/xbtYqRq7OP4',img:'img/c-reader.webp',go:'Watch on YouTube',play:true},
+    {f:'Film',t:'The MagCast on Spotify',d:'2026',k:'Audio',p:'Curated audio commentary for those who value insight but not the time to read.',u:'https://open.spotify.com/episode/2tzrNh5p2apXcqeFPbJNkF',img:'img/butterfly.webp',go:'Listen on Spotify',play:true},
+    {f:'Film',t:'Global Network Community',d:'Date not shown',k:'Bluxe film',p:'The people and places of the Bluxe network.',u:'https://www.youtube.com/watch?v=rK0-oVuyudU',img:'img/event-2.webp',go:'Watch on YouTube',play:true},
+    {f:'Film',t:'Curated Events',d:'Date not shown',k:'Bluxe film',p:'Inside Bluxe gatherings.',u:'https://www.youtube.com/watch?v=jsZBxbJhDHU',img:'img/event-1.webp',go:'Watch on YouTube',play:true},
+    {f:'Film',t:'Strategic Benefits',d:'Date not shown',k:'Bluxe film',p:'What the Bluxe network offers its members and partners.',u:'https://www.youtube.com/watch?v=-ULKaqR9_XE',img:'img/event-4.webp',go:'Watch on YouTube',play:true}
+  ];
+  var cities=[['London',25.4],['Lagos',15.5],['New York',11.2],['Dubai',11.1],['Nairobi',9],['Accra',7],['Rio de Janeiro',5.1],['Cape Town',4.5],['Lisbon',4]];
+  var mix=[['African',32.6],['European',28.4],['Asian',15],['Americas',12.8],['Emirati',11.2]];
+
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+
+  /* ---------- stories ---------- */
+  var sEl=document.getElementById('stories');
+  function renderStories(p){
+    sEl.innerHTML=stories.filter(function(s){return p==='all'||s[1]===p}).map(function(s){
+      return '<li class="story"><span class="n">'+String(s[0]).padStart(2,'0')+'</span><div><span class="s">'+esc(s[2])+'</span><h3><a href="'+ED+'" target="_blank" rel="noopener" style="text-decoration:none">'+esc(s[3])+'</a></h3>'+(s[6]?'<a class="magcast-story" href="'+s[6]+'" target="_blank" rel="noopener" aria-label="Listen to the MagCast companion for '+esc(s[3])+'">MagCast · Listen ↗</a>':'')+'</div><p>'+esc(s[4])+'</p><span class="rt">'+s[5]+' min · '+s[1]+'</span></li>';
+    }).join('');
+  }
+  renderStories('all');
+  document.getElementById('pillarChips').addEventListener('click',function(e){
+    var b=e.target.closest('.chip'); if(!b) return;
+    this.querySelectorAll('.chip').forEach(function(c){c.setAttribute('aria-pressed',c===b)});
+    renderStories(b.dataset.p);
+  });
+
+  /* ---------- archive ---------- */
+  var aEl=document.getElementById('arch'), aF='all', aQ='';
+  function renderArch(){
+    var list=arch.filter(function(a){
+      return (aF==='all'||a.f===aF) && (!aQ || (a.t+' '+a.p+' '+a.k+' '+a.d).toLowerCase().indexOf(aQ)>-1);
+    });
+    document.getElementById('archCount').textContent=list.length+(list.length===1?' item':' items');
+    aEl.innerHTML=list.map(function(a){
+      var th = a.img ? '<div class="th"'+(a.contain?' style="display:grid;place-items:center;background:#060506;padding:24px"':'')+'><img src="'+a.img+'" alt="" loading="lazy"'+(a.contain?' style="object-fit:contain;height:auto"':'')+'>'+(a.play?'<span class="play" aria-hidden="true"></span>':'')+'</div>'
+                     : '<div class="th txt"><span>'+esc(a.txt||a.t)+'</span></div>';
+      if(a.f==='Article') th='';
+      var fmt = a.f==='Film' ? (a.go.indexOf('Listen')===0?'Audio':'Video') : a.f;
+      return '<li class="item"><a href="'+a.u+'" target="_blank" rel="noopener">'+th+'<div class="bd"><div class="meta"><span class="f">'+fmt+'</span><span>'+esc(a.d)+'</span><span>'+esc(a.k)+'</span></div><h3>'+esc(a.t)+'</h3><p>'+esc(a.p)+'</p><span class="go">'+esc(a.go||'Read on bluxecentury.com')+' ↗</span></div></a>'+(a.mag?'<a class="magcast-archive-link" href="'+a.mag+'" target="_blank" rel="noopener" aria-label="Listen to the MagCast companion for '+esc(a.t)+'">MagCast · Listen ↗</a>':'')+'</li>';
+    }).join('') || '<li class="item"><div class="bd"><h3>Nothing matches that search.</h3><p>Try a broader word, or choose Everything.</p></div></li>';
+  }
+  renderArch();
+  document.getElementById('archChips').addEventListener('click',function(e){
+    var b=e.target.closest('.chip'); if(!b) return;
+    this.querySelectorAll('.chip').forEach(function(c){c.setAttribute('aria-pressed',c===b)});
+    aF=b.dataset.f; renderArch();
+  });
+  document.getElementById('archSearch').addEventListener('input',function(){aQ=this.value.trim().toLowerCase();renderArch()});
+
+  /* ---------- bars ---------- */
+  function bars(id,data,max){
+    document.getElementById(id).innerHTML=data.map(function(d){
+      return '<div class="bar"><span>'+d[0]+'</span><span class="t"><i style="width:'+(d[1]/max*100)+'%"></i></span><span class="v">'+d[1]+'%</span></div>';
+    }).join('');
+  }
+  bars('cityBars',cities,30); bars('mixBars',mix,40);
+
+  /* ---------- docs: absolute URLs so they open in a new tab ---------- */
+  document.querySelectorAll('[data-doc]').forEach(function(a){ try{ a.href=new URL(a.dataset.doc,location.href).href; }catch(e){} });
+
+  /* ---------- copy ---------- */
+  function copyText(t,btn){
+    var done=function(){ if(btn){var o=btn.textContent;btn.textContent='Copied';setTimeout(function(){btn.textContent=o},1600);} };
+    try{ navigator.clipboard.writeText(t).then(done,function(){fallback()}); }catch(e){ fallback(); }
+    function fallback(){ var ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');done()}catch(e){}ta.remove(); }
+  }
+  document.addEventListener('click',function(e){ var b=e.target.closest('[data-copy]'); if(b) copyText(b.dataset.copy,b); });
+
+  /* ---------- brief builder ---------- */
+  var form=document.getElementById('briefForm');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var err=document.getElementById('briefErr');
+    var name=form.elements["name"].value.trim(), org=form.elements["org"].value.trim(), email=form.elements["email"].value.trim();
+    if(!name||!org||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){ err.textContent='Add your name, organisation and a valid email address so we can reply.'; err.hidden=false; return; }
+    err.hidden=true;
+    var type=form.querySelector('input[name=ptype]:checked').value;
+    var fmts=[].map.call(form.querySelectorAll('input[name=fmt]:checked'),function(i){return i.value});
+    var body='Hello Bluxe Century,\n\nI would like a proposal.\n\nEnquiring as: '+type+'\nInterested in: '+(fmts.join(', ')||'Open to suggestions')+'\nMarkets: '+(form.elements["market"].value.trim()||'Not specified')+'\nTiming: '+form.elements["time"].value+'\n\nWhat success looks like:\n'+(form.elements["goal"].value.trim()||'To discuss')+'\n\nPlease include current audience figures, distribution and rates.\n\n'+name+'\n'+org+'\n'+email;
+    var subject='Proposal request: '+org+' ('+type+')';
+    document.getElementById('briefText').textContent='To: info@bluxecentury.com\nSubject: '+subject+'\n\n'+body;
+    document.getElementById('briefMail').href='mailto:info@bluxecentury.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+    var out=document.getElementById('briefOut'); out.hidden=false; out.scrollIntoView({behavior:'smooth',block:'nearest'});
+  });
+  document.getElementById('briefCopy').addEventListener('click',function(){ copyText(document.getElementById('briefText').textContent,this); });
+
+  /* ---------- router ---------- */
+  var views=[].slice.call(document.querySelectorAll('.view'));
+  var navLinks=[].slice.call(document.querySelectorAll('.nav a'));
+  function route(){
+    var h=(location.hash||'#home').slice(1)||'home';
+    var v=document.querySelector('.view[data-view="'+h+'"]'), anchor=null;
+    if(!v){ anchor=document.getElementById(h); v=anchor?anchor.closest('.view'):null; }
+    if(!v){ v=document.querySelector('.view[data-view="home"]'); }
+    views.forEach(function(x){x.classList.toggle('on',x===v)});
+    var name=v.dataset.view;
+    navLinks.forEach(function(a){ if(a.getAttribute('href')==='#'+name) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
+    var titles={home:'Bluxe Century',idea:'The Idea · Bluxe Century',platform:'Platform · Bluxe Century',magazine:'The Magazine · Bluxe Century',archive:'Archive and Film · Bluxe Century',record:'Track Record · Bluxe Century',partners:'Partners · Bluxe Century',membership:'Membership · Bluxe Century'};
+    document.title=titles[name]||'Bluxe Century';
+    closeMenu();
+    if(anchor){ setTimeout(function(){anchor.scrollIntoView({block:'start'})},30); } else { window.scrollTo(0,0); }
+  }
+  window.addEventListener('hashchange',route);
+
+  /* ---------- menu ---------- */
+  var sheet=document.getElementById('sheet'), openB=document.getElementById('menuOpen');
+  function closeMenu(){ if(!sheet.hidden){ sheet.hidden=true; openB.setAttribute('aria-expanded','false'); document.body.style.overflow=''; } }
+  openB.addEventListener('click',function(){ sheet.hidden=false; openB.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; document.getElementById('menuClose').focus(); });
+  document.getElementById('menuClose').addEventListener('click',function(){ closeMenu(); openB.focus(); });
+  sheet.addEventListener('click',function(e){ if(e.target.closest('a')) closeMenu(); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeMenu(); });
+
+  route();
+})();
+</script>
+</body>
+</html>
